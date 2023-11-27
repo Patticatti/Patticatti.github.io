@@ -12,7 +12,6 @@ body {
     background-attachment: fixed; /* Fixed background */
     height: 900px; /* Set the height of the background image */
     margin: 0;
-    padding: 10px;
 }
 
 header {

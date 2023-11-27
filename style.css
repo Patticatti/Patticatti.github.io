@@ -5,21 +5,27 @@
 
 body {
     font-family: JosefinSans;
-    background-color: #FFF3F5;
+    background-image: url('images/cherrybackgrnd.png'); /* Replace with the path to your image */
+    background-size: cover; /* This will cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fixed background */
+    height: 900px; /* Set the height of the background image */
     margin: 0;
+    padding: 10px;
 }
-
-#container {
-    text-align: center;
-}
-
 
 header {
     background-color: #100003;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
     align-items: center;
 }
 
@@ -28,6 +34,11 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: black;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#name {
+    margin: 0; /* Remove default margin for the paragraph */
 }
 
 nav {
@@ -45,6 +56,6 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #fcd5ce;
+    background-color: #2d070e;
     cursor: pointer;
 }

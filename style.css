@@ -15,7 +15,7 @@ body {
 
 
 header {
-    background-color: #FFF3F5;
+    background-color: #100003;
     color: black;
     padding: 15px;
     display: flex;
@@ -36,7 +36,7 @@ nav {
 }
 
 nav a {
-    color: #FFF3F5;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 10px;

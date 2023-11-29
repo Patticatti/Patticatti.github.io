@@ -42,6 +42,7 @@ nav a {
 nav a:hover {
     background-color: #2d070e;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #logo-container {
@@ -112,10 +113,8 @@ nav a:hover {
     justify-content: center;
 }
 
-.buttons {
-    display: flex;
-    justify-content: left; 
-    margin-top: 2.0vw;
+#featured-projects {
+    position: relative;
 }
 
 button {
@@ -130,6 +129,22 @@ button {
     border-radius: 30px; 
 }
 
+button.view-all-button {
+    margin-top: 8vw;
+    padding: 15px 30px;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+    background-color: #2d070e;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left; 
+    margin-top: 2.0vw;
+}
+
 .project-boxes {
     display: flex;
     justify-content: center;
@@ -141,10 +156,35 @@ button {
 .project-button {
     background: none;
     width: 25vw;
+    height: 16vw;
     border: none;
     padding: 0;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+}
+
+.project-button {
+    text-align: left;
+}
+
+.project-text h2 {
+    font-size: 1.0vw;
+    font-weight: normal;
+    color: black;
+    display: inline;
+}
+
+.project-text h3 {
+    font-size: 1.0vw;
+    color: #FE375D;
+    display: inline;
+    margin-left: 3px;
+}
+
+.project-text h1 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
 }
 
 .project-button:hover {

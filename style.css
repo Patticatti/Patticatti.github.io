@@ -3,6 +3,11 @@
     src: url(fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: JosefinSans;
     background-image: url('images/cherrybackgrnd.png'); /* Replace with the path to your image */
@@ -10,7 +15,6 @@ body {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-attachment: fixed; /* Fixed background */
-    height: 900px; /* Set the height of the background image */
     margin: 0;
 }
 
@@ -32,7 +36,7 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 20px; /* idk, space b/w elements */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -51,7 +55,7 @@ nav a:hover {
 .logo {
     height: 30px;
     width: auto;
-    margin-right: 20px;
+    margin-inline: 20px;
 }
 
 #title-page {
@@ -98,14 +102,12 @@ nav a:hover {
     background-color: #FFF3F5; /*#FFF3F5*/
     position: relative;
     top: 100px;
-    width: 100vw;
+    width: 100%;
     font-size:2.0vw;
     height: 40vw;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the text horizontally */
     text-align: center;
-    padding: 10px; /* Padding inside the container */
 }
 
 
@@ -141,8 +143,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-left: 10.0vw;
-    margin-right: 10.0vw;
+    margin-inline: 10.0vw;
 }
 
 .project-button {
@@ -172,7 +173,6 @@ button:hover {
     font-size: 1.0vw;
     color: #FE375D;
     display: inline;
-    margin-left: 3px;
 }
 
 .project-text h1 {
@@ -202,7 +202,7 @@ button:hover {
     }
     .logo{
         height: 15px;
-        margin-right: 8px;
+        margin-inline: 8px;
     }
     #circle-container {
         top: 18px;
@@ -221,8 +221,7 @@ button:hover {
     }
 
     #featured {
-        position: relative;
-        top: 500px;
+        top: 550px;
         height: 200vw;
     }
 
@@ -307,7 +306,7 @@ button:hover {
     }
     .logo{
         height: 20px;
-        margin-right: 10px;
+        margin-inline: 10px;
     }
     #circle-container {
         top: 25px;

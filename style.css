@@ -32,7 +32,7 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -48,12 +48,10 @@ nav a:hover {
     align-items: center;
 }
 
-#logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    margin-right: 10px; /* Adjust the margin as needed */
+.logo {
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
 }
 
 #circle-container {
@@ -196,12 +194,30 @@ button:hover {
     border-radius: 10px;
 }
 
-@media (max-width: 768px)
+@media (max-width: 480px) /*mobile*/
+{
+    header {
+        font-size:8px;
+    }
+    nav a{
+        margin: 0 8px;
+    }
+    .logo{
+        height: 15px;
+        margin-right: 8px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
 {
     header {
         font-size:10px;
     }
     nav a{
         margin: 0 8px;
+    }
+    .logo{
+        height: 20px;
+        margin-right: 10px;
     }
 }

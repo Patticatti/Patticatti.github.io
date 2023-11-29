@@ -54,13 +54,17 @@ nav a:hover {
     margin-right: 20px;
 }
 
+#title-page {
+    display: flex;
+    align-items: left;
+}
+
 #circle-container {
     position: relative;
-    top: 50px;
-    left: 56vw;
+    top:50px;
     width: 33vw;
     height: 33vw;
-    overflow: hidden;
+    margin-left: 10vw;
     border-radius: 50%;
 }
 
@@ -71,8 +75,8 @@ nav a:hover {
 }
 
 #intro-title {
-    position: absolute;
-    top: 10vw;
+    position: relative;
+    top:100px;
     left: 8vw;
     color: white;
 }
@@ -91,10 +95,10 @@ nav a:hover {
 
 #featured {
     background-color: #FFF3F5; /*#FFF3F5*/
-    position: absolute;
-    top: 44vw;
-    left: 0px;
+    position: relative;
+    top: 100px;
     width: 100vw;
+    font-size:2.0vw;
     height: 40vw;
     display: flex;
     flex-direction: column;
@@ -103,15 +107,6 @@ nav a:hover {
     padding: 10px; /* Padding inside the container */
 }
 
-.featured-projects {
-    position: absolute;
-    color: white;
-    justify-content: center;
-}
-
-#featured-projects {
-    position: relative;
-}
 
 button {
     color: #ffffff;
@@ -153,14 +148,16 @@ button:hover {
     background: none;
     width: 25vw;
     height: 16vw;
+    text-align: left;
     border: none;
     padding: 0;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
-.project-button {
-    text-align: left;
+.project-text {
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .project-text h2 {
@@ -209,6 +206,75 @@ button:hover {
     #circle-container {
         top: 18px;
     }
+
+    #intro-title {
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+
+    #featured {
+        position: relative;
+        top: 500px;
+        height: 200vw;
+    }
+
+    #title-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #circle-container {
+        position: absolute;
+        margin: 0;
+        top:150px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    button.view-all-button {
+        padding: 10px 30px;
+    }
+
+    .project-boxes {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .project-button {
+        width: 70vw;
+        height: 40vw;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .project-text {
+        top: 10px;
+    }
+
+    .project-text h3, 
+    .project-text h2 {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .project-text h1 {
+        font-size: 15px;
+    }
+
+    #intro-title h1 {
+        font-size: 30px;
+        font-weight: bold; /* Add spacing between h1 and h2 */
+    }
+    
+    #intro-title h2 {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 30px;
+        margin-top: 300px; /* Add spacing between h1 and h2 */
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 768px)  /*tablet*/
@@ -225,5 +291,14 @@ button:hover {
     }
     #circle-container {
         top: 25px;
+    }
+    #intro-title {
+        top: 60px;
+    }
+    #featured {
+        top: 50px;
+    }
+    button.view-all-button {
+        padding: 14px 30px;
     }
 }

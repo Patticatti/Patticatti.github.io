@@ -67,6 +67,7 @@ nav a:hover {
     position: relative;
     justify-content: left;
     top:50px;
+    left: 8vw;
     width: 33vw;
     height: 33vw;
     border-radius: 50%;
@@ -205,6 +206,7 @@ button:hover {
         margin-inline: 8px;
     }
     #circle-container {
+        left: 0;
         top: 18px;
     }
 
@@ -236,8 +238,8 @@ button:hover {
         position: absolute;
         margin: 0;
         top:150px;
-        width: 60vw;
-        height: 60vw;
+        width: 100%;
+        height: 100%;
     }
 
     .buttons {

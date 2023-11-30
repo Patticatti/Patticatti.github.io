@@ -125,7 +125,7 @@ button {
 
 button.view-all-button {
     margin-top: 8vw;
-    padding: 15px 30px;
+    padding: 1.8vw 5.0vw;
 }
 
 button:hover {
@@ -222,7 +222,7 @@ button:hover {
 
     #featured {
         top: 550px;
-        height: 200vw;
+        height: 210vw;
     }
 
     #title-page {
@@ -249,10 +249,6 @@ button:hover {
         font-size: 15px;
         cursor: pointer;
         border-radius: 30px; 
-    }
-
-    button.view-all-button {
-        padding: 10px 30px;
     }
 
     .project-boxes {
@@ -294,6 +290,11 @@ button:hover {
         margin-top: 300px; /* Add spacing between h1 and h2 */
     }
 
+    button.view-all-button {
+        margin-top: 10vw;
+        padding: 4.0vw 12.0vw;
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 768px)  /*tablet*/
@@ -316,8 +317,5 @@ button:hover {
     }
     #featured {
         top: 50px;
-    }
-    button.view-all-button {
-        padding: 14px 30px;
     }
 }

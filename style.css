@@ -107,7 +107,7 @@ nav a:hover {
     height: 40vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 
@@ -125,6 +125,7 @@ button {
 
 button.view-all-button {
     margin-top: 8vw;
+    width: 20vw;
     padding: 1.8vw 5.0vw;
 }
 
@@ -141,7 +142,6 @@ button:hover {
 
 .project-boxes {
     display: flex;
-    justify-content: center;
     gap: 5px;
     margin-inline: 10.0vw;
 }
@@ -221,6 +221,7 @@ button:hover {
     }
 
     #featured {
+        font-size:3.0vw;
         top: 550px;
         height: 210vw;
     }
@@ -292,6 +293,7 @@ button:hover {
 
     button.view-all-button {
         margin-top: 10vw;
+        width: 50vw;
         padding: 4.0vw 12.0vw;
     }
 

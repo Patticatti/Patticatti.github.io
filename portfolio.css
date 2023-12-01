@@ -1,0 +1,194 @@
+#portfolio-page {
+    background-color: #FFF3F5; /*#FFF3F5*/
+    position: relative;
+    width: 100%;
+    font-size:4.0vw;
+    height: 100vw;
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.view-all-button {
+    margin-top: 8vw;
+    width: 20vw;
+    padding: 1.8vw 5.0vw;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+    background-color: #2d070e;
+}
+
+.project-boxes {
+    display: flex;
+    margin-inline: 10.0vw;
+}
+
+
+.project-text {
+    position: relative;
+}
+
+.project-text h2 {
+    font-size: 1.0vw;
+    font-weight: normal;
+    color: black;
+    display: inline;
+}
+
+.project-text h3 {
+    font-size: 1.0vw;
+    color: #FE375D;
+    display: inline;
+}
+
+.project-text h1 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+}
+
+.project-button {
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    width: 25vw;
+    height: 20vw;
+    text-align: left;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.project-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-button::before {
+    content: 'LITTLE SALMON CARMACKS APP REDESIGN'; /* Displayed text on hover */
+    display: none;
+    position: absolute;
+    padding:5%;
+    color: #ffffff; /* Text color on hover */
+    line-height: 1.5; 
+    font-weight: bold; /* Make the text bold */
+    mix-blend-mode: hard-light; 
+}
+
+.project-button:hover::before {
+    display: block;
+}
+
+.project-button:hover .project-img {
+    filter: brightness(0.8);
+    transition: filter 0.2s ease;
+    opacity: 0.5;
+}
+
+.project-button:hover .project-text {
+    filter: brightness(1);
+    transition: filter 0.2s ease;
+}
+
+@media (max-width: 480px) /*mobile*/
+{
+    #circle-container {
+        left: 0;
+        top:100px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circle-image {
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .buttons {
+        justify-content: center; 
+    }
+
+    #intro-title {
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+
+    #featured {
+        font-size:3.0vw;
+        top: 300px;
+        height: 210vw;
+    }
+
+    #title-page {
+        margin:0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro-title h1 {
+        font-size: 30px;
+        font-weight: bold; /* Add spacing between h1 and h2 */
+    }
+    
+    #intro-title h2 {
+        font-size: 20px;
+        max-width: 100%;
+        font-weight: normal;
+        margin-inline: 20vw;
+        margin-top: 300px; /* Add spacing between h1 and h2 */
+    }
+
+    button.view-all-button {
+        margin-top: 10vw;
+        width: 50vw;
+        padding: 4.0vw 12.0vw;
+    }
+
+    .project-boxes {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .project-button {
+        width: 70vw;
+        height: 40vw;
+        margin-bottom: 40px;
+    }
+
+    .project-text {
+        top: 0px;
+    }
+
+    .project-text h3, 
+    .project-text h2 {
+        font-size: 12px;
+    }
+
+    .project-text h1 {
+        margin-top:0px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
+{
+    #circle-container {
+        top: 25px;
+    }
+    #intro-title {
+        top: 60px;
+    }
+    #featured {
+        top: 50px;
+    }
+}

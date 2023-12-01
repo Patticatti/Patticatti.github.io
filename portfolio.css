@@ -26,10 +26,21 @@ button:hover {
     margin-inline: 10.0vw;
 }
 
+.project-box{
+    position:relative;
+}
+
+.project-text,
+.project-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Additional styling properties as needed */
+}
+
 
 .project-text {
     pointer-events: none;
-    position: absolute;
     margin-left:20px;
     color: #ffffff;
     font-weight: bold;

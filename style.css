@@ -96,30 +96,6 @@ nav a:hover {
         border-radius: 30px; 
     }
 
-    .project-boxes {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .project-button {
-        width: 70vw;
-        height: 40vw;
-        margin-bottom: 40px;
-    }
-
-    .project-text {
-        top: 10px;
-    }
-
-    .project-text h3, 
-    .project-text h2 {
-        font-size: 12px;
-        margin-top: 30px;
-    }
-
-    .project-text h1 {
-        font-size: 15px;
-    }
 }
 
 @media (min-width: 480px) and (max-width: 768px)  /*tablet*/

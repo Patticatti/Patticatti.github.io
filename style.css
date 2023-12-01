@@ -28,6 +28,18 @@ header {
     align-items: center;
 }
 
+button {
+    color: #ffffff;
+    background-color: #FE375D;
+    font-family: JosefinSans;
+    border: none;
+    padding: 0.7vw 3.0vw;
+    margin: 0px 0.8vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -59,170 +71,6 @@ nav a:hover {
     margin-inline: 20px;
 }
 
-#title-page {
-    display: flex;
-    align-items: left;
-}
-
-#circle-container {
-    position: relative;
-    justify-content: center;
-    top:50px;
-    left: 8vw;
-    width: 33vw;
-    height: 33vw;
-    border-radius: 50%;
-}
-
-.circle-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-#intro-title {
-    position: relative;
-    top:100px;
-    left: 8vw;
-    color: white;
-}
-
-#intro-title h1 {
-    font-size: 5.0vw;
-    font-weight: bold;
-    margin-bottom: 2.0vw; /* Add spacing between h1 and h2 */
-}
-
-#intro-title h2 {
-    font-size: 2.0vw;
-    font-weight: normal;
-    max-width: 50vw;
-    margin-top: 2.0vw; /* Add spacing between h1 and h2 */
-}
-
-#featured {
-    background-color: #FFF3F5; /*#FFF3F5*/
-    position: relative;
-    top: 100px;
-    width: 100%;
-    font-size:2.0vw;
-    height: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#featured h1{
-    position: relative;
-    top: 0px;
-}
-
-#portfolio-page {
-    background-color: #FFF3F5; /*#FFF3F5*/
-    position: absolute;
-    width: 100%;
-    font-size:4.0vw;
-    height: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#portfolio-page h1{
-    margin-top: 50px;
-}
-
-.magstar {
-    position:absolute;
-    left:5vw;
-    top: 3vw;
-    width: 1.5vw;
-    height: auto;
-    margin:0;
-}
-
-
-button {
-    color: #ffffff;
-    background-color: #FE375D;
-    font-family: JosefinSans;
-    border: none;
-    padding: 0.7vw 3.0vw;
-    margin: 0px 0.8vw;
-    font-size: 1.5vw;
-    cursor: pointer;
-    border-radius: 30px; 
-}
-
-button.view-all-button {
-    margin-top: 8vw;
-    width: 20vw;
-    padding: 1.8vw 5.0vw;
-}
-
-button:hover {
-    transition: background-color 0.3s ease;
-    background-color: #2d070e;
-}
-
-.buttons {
-    display: flex;
-    justify-content: left; 
-    margin-top: 2.0vw;
-}
-
-.project-boxes {
-    display: flex;
-    gap: 5px;
-    margin-inline: 10.0vw;
-}
-
-.project-button {
-    background: none;
-    width: 25vw;
-    height: 16vw;
-    text-align: left;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.project-text {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.project-text h2 {
-    font-size: 1.0vw;
-    font-weight: normal;
-    color: black;
-    display: inline;
-}
-
-.project-text h3 {
-    font-size: 1.0vw;
-    color: #FE375D;
-    display: inline;
-}
-
-.project-text h1 {
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: black;
-}
-
-.project-button:hover {
-    transform: scale(1.1); /* Add a simple hover effect */
-}
-
-.project-button img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 @media (max-width: 480px) /*mobile*/
 {
     header {
@@ -235,38 +83,6 @@ button:hover {
         height: 15px;
         margin-inline: 8px;
     }
-    #circle-container {
-        left: 0;
-        top:100px;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .circle-image {
-        width: 250px;
-        height: auto;
-        border-radius: 50%;
-    }
-
-    #intro-title {
-        position: absolute;
-        left: 0;
-        top: 50px;
-    }
-
-    #featured {
-        font-size:3.0vw;
-        top: 300px;
-        height: 210vw;
-    }
-
-    #title-page {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
 
     .buttons {
         justify-content: center; 
@@ -288,7 +104,6 @@ button:hover {
     .project-button {
         width: 70vw;
         height: 40vw;
-        text-align: center;
         margin-bottom: 40px;
     }
 
@@ -305,26 +120,6 @@ button:hover {
     .project-text h1 {
         font-size: 15px;
     }
-
-    #intro-title h1 {
-        font-size: 30px;
-        font-weight: bold; /* Add spacing between h1 and h2 */
-    }
-    
-    #intro-title h2 {
-        font-size: 20px;
-        font-weight: normal;
-        max-width: 100vw;
-        margin-inline: 80px;
-        margin-top: 300px; /* Add spacing between h1 and h2 */
-    }
-
-    button.view-all-button {
-        margin-top: 10vw;
-        width: 50vw;
-        padding: 4.0vw 12.0vw;
-    }
-
 }
 
 @media (min-width: 480px) and (max-width: 768px)  /*tablet*/
@@ -338,14 +133,5 @@ button:hover {
     .logo{
         height: 20px;
         margin-inline: 10px;
-    }
-    #circle-container {
-        top: 25px;
-    }
-    #intro-title {
-        top: 60px;
-    }
-    #featured {
-        top: 50px;
     }
 }

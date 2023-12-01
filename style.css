@@ -64,6 +64,11 @@ nav a:hover {
     align-items: center;
 }
 
+#video-container {
+    width: 900px;
+    height: 605px;
+}
+
 
 .logo {
     height: 30px;

@@ -43,3 +43,23 @@
     height: auto;
     margin:0;
 }
+
+.leftblackstar{
+    filter:brightness(0);
+    position:absolute;
+    left:-7vw;
+    top: -5.5vw;
+    width:14.0vw;
+    height: auto;
+    margin:0;
+}
+
+.rightblackstar{
+    filter:brightness(0.05);
+    position:absolute;
+    right:-7vw;
+    top: -5.5vw;
+    width: 14.0vw;
+    height: auto;
+    margin:0;
+}

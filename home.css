@@ -56,19 +56,24 @@
     top: 10px;
 }
 
-#portfolio-page {
-    background-color: #FFF3F5; /*#FFF3F5*/
-    position: absolute;
+#about-me {
+    background-color: #160307; /*#FFF3F5*/
+    position: relative;
     width: 100%;
-    font-size:4.0vw;
+    top: 100px;
+    font-size:2.0vw;
     height: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#portfolio-page h1{
-    margin-top: 50px;
+#about-me h1{
+    position:relative;
+    align-self: normal;
+    left:8vw;
+    top:10px;
+    color:white;
 }
 
 button.view-all-button {
@@ -172,6 +177,12 @@ button:hover {
         height: 210vw;
     }
 
+    #about-me {
+        font-size:3.0vw;
+        top: 300px;
+        height: 210vw;
+    }
+
     #title-page {
         margin:0;
         flex-direction: column;
@@ -234,6 +245,9 @@ button:hover {
         top: 60px;
     }
     #featured {
+        top: 50px;
+    }
+    #about-me {
         top: 50px;
     }
 }

@@ -77,7 +77,29 @@
         <button class="view-all-button" onclick="window.location.href='your-link-for-view-all.html'">VIEW ALL</button>
     </div>
     <div id="about-me">
+        <img class="rightblackstar" src="images\blackstar.png">
+        <img class="leftblackstar" src="images\blackstar.png">
+        <h1>ABOUT ME</h1>
+    </div>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            adjustPortfolioPageHeight();
+        });
 
-    </div>         
+        window.addEventListener("resize", function() {
+            adjustPortfolioPageHeight();
+        });
+
+        function adjustPortfolioPageHeight() {
+            var portfolioPage = document.getElementById("featured");
+            var lowestElement = document.getElementById("about-me");
+
+            // Set the height of portfolio-page based on the position of the lowest element
+            if (lowestElement) {
+                var lowestElementPosition = lowestElement.getBoundingClientRect().bottom;
+                portfolioPage.style.height = lowestElementPosition + 0 + "px";
+            }
+        }
+    </script>          -->
 </body>
 </html>

@@ -52,6 +52,7 @@ nav a:hover {
     align-items: center;
 }
 
+
 .logo {
     height: 30px;
     width: auto;
@@ -65,8 +66,9 @@ nav a:hover {
 
 #circle-container {
     position: relative;
-    justify-content: left;
+    justify-content: center;
     top:50px;
+    left: 8vw;
     width: 33vw;
     height: 33vw;
     border-radius: 50%;
@@ -108,6 +110,35 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#featured h1{
+    position: relative;
+    top: 0px;
+}
+
+#portfolio-page {
+    background-color: #FFF3F5; /*#FFF3F5*/
+    position: absolute;
+    width: 100%;
+    font-size:4.0vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio-page h1{
+    margin-top: 50px;
+}
+
+.magstar {
+    position:absolute;
+    left:5vw;
+    top: 3vw;
+    width: 1.5vw;
+    height: auto;
+    margin:0;
 }
 
 
@@ -205,7 +236,11 @@ button:hover {
         margin-inline: 8px;
     }
     #circle-container {
-        top: 18px;
+        left: 0;
+        top:100px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
 
     .circle-image {
@@ -222,7 +257,7 @@ button:hover {
 
     #featured {
         font-size:3.0vw;
-        top: 550px;
+        top: 300px;
         height: 210vw;
     }
 
@@ -232,13 +267,6 @@ button:hover {
         text-align: center;
     }
 
-    #circle-container {
-        position: absolute;
-        margin: 0;
-        top:150px;
-        width: 60vw;
-        height: 60vw;
-    }
 
     .buttons {
         justify-content: center; 

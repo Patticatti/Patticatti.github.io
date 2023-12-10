@@ -1,0 +1,253 @@
+#title-page {
+    display: flex;
+    align-items: left;
+}
+
+#circle-container {
+    position: relative;
+    justify-content: center;
+    top:50px;
+    left: 8vw;
+    width: 33vw;
+    height: 33vw;
+    border-radius: 50%;
+}
+
+.circle-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#intro-title {
+    position: relative;
+    top:100px;
+    left: 8vw;
+    color: white;
+}
+
+#intro-title h1 {
+    font-size: 5.0vw;
+    font-weight: bold;
+    margin-bottom: 2.0vw; /* Add spacing between h1 and h2 */
+}
+
+#intro-title h2 {
+    font-size: 2.0vw;
+    font-weight: normal;
+    max-width: 50vw;
+    margin-top: 2.0vw; /* Add spacing between h1 and h2 */
+}
+
+#featured {
+    background-color: #FFF3F5; /*#FFF3F5*/
+    position: relative;
+    top: 100px;
+    width: 100%;
+    font-size:2.0vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#featured h1{
+    position: relative;
+    top: 10px;
+}
+
+#about-me {
+    background-color: #160307; /*#FFF3F5*/
+    position: relative;
+    width: 100%;
+    top: 100px;
+    font-size:2.0vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me h1{
+    position:relative;
+    align-self: normal;
+    left:8vw;
+    top:10px;
+    color:white;
+}
+
+button.view-all-button {
+    margin-top: 8vw;
+    width: 20vw;
+    padding: 1.8vw 5.0vw;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+    background-color: #2d070e;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left; 
+    margin-top: 2.0vw;
+}
+
+.project-boxes {
+    display: flex;
+    gap: 5px;
+    margin-inline: 10.0vw;
+}
+
+.project-button {
+    background: none;
+    width: 25vw;
+    height: 16vw;
+    text-align: left;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-text {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.project-text h2 {
+    font-size: 1.0vw;
+    font-weight: normal;
+    color: black;
+    display: inline;
+}
+
+.project-text h3 {
+    font-size: 1.0vw;
+    color: #FE375D;
+    display: inline;
+}
+
+.project-text h1 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+}
+
+.project-button:hover {
+    transform: scale(1.1); /* Add a simple hover effect */
+}
+
+.project-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) /*mobile*/
+{
+    #circle-container {
+        left: 0;
+        top:100px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circle-image {
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .buttons {
+        justify-content: center; 
+    }
+
+    #intro-title {
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+
+    #featured {
+        font-size:3.0vw;
+        top: 300px;
+        height: 210vw;
+    }
+
+    #about-me {
+        font-size:3.0vw;
+        top: 300px;
+        height: 210vw;
+    }
+
+    #title-page {
+        margin:0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro-title h1 {
+        font-size: 30px;
+        font-weight: bold; /* Add spacing between h1 and h2 */
+    }
+    
+    #intro-title h2 {
+        font-size: 20px;
+        max-width: 100%;
+        font-weight: normal;
+        margin-inline: 20vw;
+        margin-top: 300px; /* Add spacing between h1 and h2 */
+    }
+
+    button.view-all-button {
+        margin-top: 10vw;
+        width: 50vw;
+        padding: 4.0vw 12.0vw;
+    }
+
+    .project-boxes {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .project-button {
+        width: 70vw;
+        height: 40vw;
+        margin-bottom: 40px;
+    }
+
+    .project-text {
+        top: 0px;
+    }
+
+    .project-text h3, 
+    .project-text h2 {
+        font-size: 12px;
+    }
+
+    .project-text h1 {
+        margin-top:0px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
+{
+    #circle-container {
+        top: 25px;
+    }
+    #intro-title {
+        top: 60px;
+    }
+    #featured {
+        top: 50px;
+    }
+    #about-me {
+        top: 50px;
+    }
+}

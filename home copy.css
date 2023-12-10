@@ -23,7 +23,6 @@
 #intro-overlay{
     position: absolute;
     z-index:3;
-    opacity:0.5;
 }
 
 #intro-title h1{
@@ -59,14 +58,17 @@
     position: absolute;
     mix-blend-mode: multiply;
     z-index: 3;
+    opacity:0.75;
 }
 
 .bkhardlight{
+    background-color: #a0122a;
     height:40vw;
     width:100vw;
     position: absolute;
     mix-blend-mode: hard-light;
     z-index: 2;
+    opacity:0.5;
 }
 
 #skill-section {
@@ -106,19 +108,42 @@
     height:40vw;
     position:relative;
     justify-content: center;
-    gap:15vw;
+    gap:12vw;
     line-height: 1.5vw;
     align-items: center;
 }
-
+.about-skill-title{
+    display:flex;
+    flex-direction: horizontal;
+    align-items: center;
+    gap:2vw;
+}
 .desc-container{
     width:30vw;
     font-weight: lighter;
 }
 
+.about-skills{
+    width:30vw;
+}
+
 .about-skill-line{
     display:flex;
     flex-direction: horizontal;
+    justify-content: space-between;
+    margin-left:4vw;
+}
+.about-skill-line-box h5{
+    background-color: #FFF3F5;
+    margin-top:0px;
+    padding:0.4vw 1.5vw;
+    border-radius: 20px;
+}
+
+.learn-more-button{
+    padding: 1.2vw 3.5vw;
+    font-weight:bold;
+    margin-left: 0;
 }
 
 

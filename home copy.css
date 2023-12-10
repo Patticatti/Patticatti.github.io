@@ -29,12 +29,14 @@
 #intro-title h1{
     margin-left:5%;
     width:60%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .intro-image{
     margin-right:5%;
     width:25%;
     height:auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 #intro-background{
@@ -99,9 +101,27 @@
     font-size: 3vw;
 }
 
-.skill-arrow{
-    
+#about-section{
+    display:flex;
+    height:40vw;
+    position:relative;
+    justify-content: center;
+    gap:15vw;
+    line-height: 1.5vw;
+    align-items: center;
 }
+
+.desc-container{
+    width:30vw;
+    font-weight: lighter;
+}
+
+.about-skill-line{
+    display:flex;
+    flex-direction: horizontal;
+}
+
+
 /* 
 @media (max-width: 480px) /*mobile
 {

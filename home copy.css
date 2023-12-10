@@ -1,9 +1,10 @@
 #home-page {
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 #intro-section {
+    height:40vw;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -11,7 +12,7 @@
 }
 
 #intro-title {
-    height:600px;
+    height:40vw;
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -20,9 +21,7 @@
 }
 
 #intro-overlay{
-    height:600px;
     position: absolute;
-    max-width:100vw;
     z-index:3;
     opacity:0.5;
 }
@@ -34,46 +33,71 @@
 
 .intro-image{
     margin-right:5%;
-    width:30%;
+    width:25%;
     height:auto;
 }
 
 #intro-background{
-    height:600px;
-    display: flex;
-    gap: 0;
+    height:40vw;
     position: absolute;
+    display: flex;
     z-index:1;
 }
 
 .intro-back-image{
     margin: 0;
-    width:33.333%;
     object-fit: cover; /* Cover the container while maintaining aspect ratio */
     object-position: center;
     overflow:hidden;
 }
 
 .bkmult{
-    height:600px;
+    height:40vw;
+    width:100vw;
     position: absolute;
     mix-blend-mode: multiply;
     z-index: 3;
 }
 
 .bkhardlight{
-    height:600px;
+    height:40vw;
+    width:100vw;
     position: absolute;
     mix-blend-mode: hard-light;
     z-index: 2;
 }
 
-#skill-section{
-    height: 50vh;
+#skill-section {
+    background-color: #FFF3F5;
+    height:20vw;
+    position:relative;
     display: flex;
-    align-items: stretch;
+    width: 100%;
+    flex-direction: horizontal;
+    justify-content: center;
+    gap:5vw;
+    align-items: center;
 }
 
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-container h4{
+    margin-top:1.2vw;
+}
+
+.skill-icon{
+    width:65px;
+}
+
+.skill-button{
+    padding: 1.5vw 6.0vw;
+    font-size: 3vw;
+}
 /* 
 @media (max-width: 480px) /*mobile
 {

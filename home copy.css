@@ -95,8 +95,12 @@
 }
 
 .skill-button{
-    padding: 1.5vw 6.0vw;
+    padding: 0 5.5vw;
     font-size: 3vw;
+}
+
+.skill-arrow{
+    
 }
 /* 
 @media (max-width: 480px) /*mobile

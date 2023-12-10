@@ -3,18 +3,40 @@
     src: url(fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
 }
 
-* {
-    box-sizing: border-box;
+h1 { /*introtitle*/
+    color: rgb(255, 255, 255);
+    font-size: 12vw;
+    font-weight: bold;
 }
-
+h2 { /*titles*/
+    color: rgb(255, 255, 255);
+    font-size: 3.65vw;
+    font-weight: bold;
+}
+h3 { /*sub titles*/
+    color: #160307;
+    font-size: 2.5vw;
+    font-weight: normal;
+}
+h4 { /*mini titles*/
+    color: #160307;
+    font-size: 1.6vw;
+    font-weight: normal;
+}
+h5 { /*regular*/
+    color: #160307;
+    font-size: 1.0vw;
+    font-weight: normal;
+}
+h6 { /*mini regular*/
+    color: #160307;
+    font-size: 0.8vw;
+    font-weight: normal;
+}
 
 body {
     font-family: JosefinSans;
-    background-image: url('images/cherrybackgrnd.png'); /* Replace with the path to your image */
-    background-size: cover; /* This will cover the entire viewport */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-attachment: fixed; /* Fixed background */
+    background-color: #FEB3C0; /* Replace with the path to your image */
     margin: 0;
 }
 

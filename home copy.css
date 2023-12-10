@@ -4,60 +4,74 @@
 }
 
 #intro-section {
-    height: 50vh;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
 }
 
 #intro-title {
+    height:600px;
     display: flex;
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100%; 
-    z-index: 3;
+    z-index: 4;
 }
 
 #intro-overlay{
+    height:600px;
     position: absolute;
-    width: 50vw;
-    height: auto;
-    opacity: 1;
-    z-index: 2;
+    max-width:100vw;
+    z-index:3;
+    opacity:0.5;
 }
 
 #intro-title h1{
-    margin-left:5vw;
-    width:60vw;
+    margin-left:5%;
+    width:60%;
 }
 
 .intro-image{
-    margin-right:5vw;
-    width:30vw;
+    margin-right:5%;
+    width:30%;
     height:auto;
 }
 
 #intro-background{
-    width:100%;
-    z-index: 1;
+    height:600px;
+    display: flex;
+    gap: 0;
+    position: absolute;
+    z-index:1;
 }
 
 .intro-back-image{
     margin: 0;
-    width:30vw;
+    width:33.333%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: center;
+    overflow:hidden;
 }
 
-
 .bkmult{
-    height:50vh;
+    height:600px;
+    position: absolute;
     mix-blend-mode: multiply;
+    z-index: 3;
 }
 
 .bkhardlight{
-    height:50vh;
+    height:600px;
+    position: absolute;
     mix-blend-mode: hard-light;
+    z-index: 2;
+}
+
+#skill-section{
+    height: 50vh;
+    display: flex;
+    align-items: stretch;
 }
 
 /* 

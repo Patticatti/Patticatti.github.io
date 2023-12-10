@@ -37,7 +37,9 @@ h6 { /*mini regular*/
 body {
     font-family: JosefinSans;
     background-color: #FEB3C0; /* Replace with the path to your image */
+    width:100vw;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {

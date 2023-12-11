@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Patti's Website</title>
-    <link rel="icon" type="images/x-icon" href="images/icon.png">
+    <link rel="icon" type="images/x-icon" href="images/moyai.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="starpos.css">
 </head>
 
 <body>
@@ -26,60 +25,184 @@
             <a href="contact.html">CONTACT</a>
         </nav>
     </header>
-    <div id="title-page">
-        <div id="intro-title">
-            <h1>Hello, my name is <br>
-                Patricia Tani.</h1>
-            <h2>I am a game-loving UX/UI designer based in Vancouver, Canada.</h2>
-            <div class="buttons">
-                <button onclick="window.location.href='home.html'">designer</button>
-                <button onclick="window.location.href='page2.html'">artist</button>
-                <button onclick="window.location.href='page3.html'">developer</button>
+    <div id="home-page">
+        <div id="intro-section">
+            <div id="intro-title">
+                <h1>I'M PATRICIA TANI.</h1>
+                <img class="intro-image" src="images/moyai.png">
+            </div>
+            <div id="intro-overlay">
+                <img class="bkmult" src="images/background/bkgradmult.png">
+                <div class="bkhardlight"> </div>
+            </div>
+            <div id="intro-background">
+                <img class="intro-back-image" src="images/background/bkwoman.png">
+                <img class="intro-back-image" src="images/background/bkmoodbot.png">
+                <img class="intro-back-image" src="images/background/bkpixel.png">
             </div>
         </div>
-        <div id="circle-container">
-            <img class="circle-image" src="images/homeselfie.png" alt="Circular Image">
+        <div id="skill-section">
+            <div class="skill-container">
+                <img class="skill-icon" src="images/home/designicon.svg">
+                <h4>designer</h4>
+                <button class="skill-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
+                    <img src="images/home/forwardarrow.svg" width="18px">
+                </button>
+            </div>
+            <img class="skill-line" src="images/vertline.svg">
+            <div class="skill-container">
+                <img class="skill-icon" src="images/home/devicon.svg">
+                <h4>developer</h4>
+                <button class="skill-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
+                    <img src="images/home/forwardarrow.svg" width="18px">
+                </button>
+            </div>
+            <img class="skill-line" src="images/vertline.svg">
+            <div class="skill-container">
+                <img class="skill-icon" src="images/home/artisticon.svg">
+                <h4>artist</h4>
+                <button class="skill-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
+                    <img src="images/home/forwardarrow.svg" width="18px">
+                </button>
+            </div>
+        </div>
+        <div id="about-section">
+            <div class="desc-container">
+                <h2>ABOUT ME</h2>
+                <img class="horizline" src="images/horizline.svg">
+                <h5>I am an ambitious and passionate second year interaction design student who possesses a love for games and acquiring new skills. Self-taught and self-motivated, my ultimate goal is to work in the games industry. Over the last few months, I have dedicated myself to learning a variety of growing proficiencies, such as website and game development, UX/UI design, and various artistic mediums. 
+                    <br><br>
+                    My true passion is creating innovative and accessible games. Currently, I lead a team of 15 members in developing indie title Arcaemi. Additionally, I founded Emily Carr University’s Game Dev Club to make game development beginner-friendly. During my spare time, I solo-develop games in Unity.</h5>
+                <button class="learn-more-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">LEARN MORE</button>
+            </div>
+            <div class="about-skills">
+                <div class="about-skill-container">
+                    <div class="about-skill-title">
+                        <img class="about-skill-title-icon" src="images/magentastar.png" width="20px"height="20px">
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="about-skill-line">
+                        <div class="about-skill-line-box">
+                            <h5>figma</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>photoshop</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>css</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>github</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>c#</h5>
+                        </div>
+                    </div>
+                    <div class="about-skill-line">
+                        <div class="about-skill-line-box">
+                            <h5>illustrator</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>html</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>vscode</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>python</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>c++</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skill-container">
+                    <div class="about-skill-title">
+                        <img class="about-skill-title-icon" src="images/magentastar.png" width="20px"height="20px">
+                        <h3>Additional Skills</h3>
+                    </div>
+                    <div class="about-skill-line">
+                        <div class="about-skill-line-box">
+                            <h5>blender</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>laser cutting</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>stable diffusion</h5>
+                        </div>
+                    </div>
+                    <div class="about-skill-line">
+                        <div class="about-skill-line-box">
+                            <h5>after effects</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>adobe animate</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>arduino</h5>
+                        </div>
+                    </div>
+                    <div class="about-skill-line">
+                        <div class="about-skill-line-box">
+                            <h5>3d printing</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>premier pro</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>unity</h5>
+                        </div>
+                        <div class="about-skill-line-box">
+                            <h5>jira</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="featured-section">
+            <h1>FEATURED PROJECTS</h1>
+            <div class="project-boxes">
+                <button class="project-button" onclick="window.location.href='your-link-for-poster1.html'">
+                    <img src="images/projects/poster1.png" alt="Poster 1">
+                    <div class = "project-text">
+                        <h2>10/13/2023  .</h2>
+                        <h3> UX/UI DESIGN</h3>
+                        <h4>LITTLE SALMON CARMACKS APP REDESIGN // FIGMA</h4>
+                    </div>
+                </button>
+                <button class="project-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
+                    <img src="images/projects/blackforestcafe.png" alt="Black Forest Cafe">
+                    <div class = "project-text">
+                        <h2>07/22/2023  .</h2>
+                        <h3> DEVELOPMENT . ART  . DESIGN</h3>
+                        <h4>BLACK FOREST CAFE // UNITY</h4>
+                    </div>
+                </button>
+                <button class="project-button" onclick="window.location.href='your-link-for-acryliceyepainting.html'">
+                    <img src="images/projects/acryliceyepainting.png" alt="Acrylic Eye Painting">
+                    <div class = "project-text">
+                        <h2>07/22/2023  .</h2>
+                        <h3> ART </h3>
+                        <h4>BEHOLDER'S GAZE // ACRYLIC</h4>
+                    </div>
+                </button>
+            </div>
+            <button class="view-all-button" onclick="window.location.href='your-link-for-view-all.html'">VIEW ALL</button>
+        </div>
+        <div id="experience-section">
+            <img class="experience-image" src="images\blackstar.png">
+            <div class="desc-countainer">
+                <h2>EXPERIENCE</h2>
+                <img src="horizontal-line">
+                <h2>description here</h2>
+                <button class="learn-more-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
+            </div>
         </div>
     </div>
-    <div id="featured">
-        <img class="magstar" src="images\magentastar.png">
-        <img class="magstar2" src="images\magentastar.png">
-        <img class="magstar3" src="images\magentastar.png">
-        <img class="rightstar" src="images\rightpinkstar.png">
-        <img class="leftstar" src="images\leftpinkstar.png">
-        <h1>FEATURED PROJECTS</h1>
-        <div class="project-boxes">
-            <button class="project-button" onclick="window.location.href='your-link-for-poster1.html'">
-                <img src="images/projects/poster1.png" alt="Poster 1">
-                <div class = "project-text">
-                    <h2>10/13/2023  .</h2>
-                    <h3> UX/UI DESIGN</h3>
-                    <h1>LITTLE SALMON CARMACKS APP REDESIGN // FIGMA</h1>
-                </div>
-            </button>
-            <button class="project-button" onclick="window.location.href='your-link-for-blackforestcafe.html'">
-                <img src="images/projects/blackforestcafe.png" alt="Black Forest Cafe">
-                <div class = "project-text">
-                    <h2>07/22/2023  .</h2>
-                    <h3> DEVELOPMENT . ART  . DESIGN</h3>
-                    <h1>BLACK FOREST CAFE // UNITY</h1>
-                </div>
-            </button>
-            <button class="project-button" onclick="window.location.href='your-link-for-acryliceyepainting.html'">
-                <img src="images/projects/acryliceyepainting.png" alt="Acrylic Eye Painting">
-                <div class = "project-text">
-                    <h2>07/22/2023  .</h2>
-                    <h3> ART </h3>
-                    <h1>BEHOLDER'S GAZE // ACRYLIC</h1>
-                </div>
-            </button>
-        </div>
-        <button class="view-all-button" onclick="window.location.href='your-link-for-view-all.html'">VIEW ALL</button>
-    </div>
-    <div id="about-me">
-        <img class="rightblackstar" src="images\blackstar.png">
-        <img class="leftblackstar" src="images\blackstar.png">
-        <h1>ABOUT ME</h1>
+    <div id="stars">
+        <img class="star1" src="images/bigstar.png">
+        <img class="star1" src="images/bigstar.png">
     </div>
     <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -102,4 +225,5 @@
         }
     </script>          -->
 </body>
+
 </html>

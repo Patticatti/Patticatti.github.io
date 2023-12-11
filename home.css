@@ -1,96 +1,178 @@
-#title-page {
+#home-page {
+    display:flex;
+    flex-direction:column;
+}
+
+#intro-section {
+    height:40vw;
     display: flex;
-    align-items: left;
-}
-
-#circle-container {
-    position: relative;
-    justify-content: center;
-    top:50px;
-    left: 8vw;
-    width: 33vw;
-    height: 33vw;
-    border-radius: 50%;
-}
-
-.circle-image {
     width: 100%;
-    height: auto;
-    border-radius: 50%;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 #intro-title {
-    position: relative;
-    top:100px;
-    left: 8vw;
-    color: white;
-}
-
-#intro-title h1 {
-    font-size: 5.0vw;
-    font-weight: bold;
-    margin-bottom: 2.0vw; /* Add spacing between h1 and h2 */
-}
-
-#intro-title h2 {
-    font-size: 2.0vw;
-    font-weight: normal;
-    max-width: 50vw;
-    margin-top: 2.0vw; /* Add spacing between h1 and h2 */
-}
-
-#featured {
-    background-color: #FFF3F5; /*#FFF3F5*/
-    position: relative;
-    top: 100px;
-    width: 100%;
-    font-size:2.0vw;
-    height: 40vw;
+    height:40vw;
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
     align-items: center;
+    z-index: 4;
 }
 
-#featured h1{
-    position: relative;
-    top: 10px;
+#intro-overlay{
+    position: absolute;
+    z-index:3;
 }
 
-#about-me {
-    background-color: #160307; /*#FFF3F5*/
-    position: relative;
-    width: 100%;
-    top: 100px;
-    font-size:2.0vw;
-    height: 40vw;
+#intro-title h1{
+    margin-left:5%;
+    width:60%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-image{
+    margin-right:5%;
+    width:25%;
+    height:auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+#intro-background{
+    height:40vw;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    z-index:1;
 }
 
-#about-me h1{
+.intro-back-image{
+    margin: 0;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: center;
+    overflow:hidden;
+}
+
+.bkmult{
+    height:40vw;
+    width:100vw;
+    position: absolute;
+    mix-blend-mode: multiply;
+    z-index: 3;
+    opacity:0.75;
+}
+
+.bkhardlight{
+    background-color: #a0122a;
+    height:40vw;
+    width:100vw;
+    position: absolute;
+    mix-blend-mode: hard-light;
+    z-index: 2;
+    opacity:0.5;
+}
+
+#skill-section {
+    background-color: #FFF3F5;
+    height:20vw;
     position:relative;
-    align-self: normal;
-    left:8vw;
-    top:10px;
-    color:white;
-}
-
-button.view-all-button {
-    margin-top: 8vw;
-    width: 20vw;
-    padding: 1.8vw 5.0vw;
-}
-
-button:hover {
-    transition: background-color 0.3s ease;
-    background-color: #2d070e;
-}
-
-.buttons {
     display: flex;
-    justify-content: left; 
-    margin-top: 2.0vw;
+    width: 100%;
+    flex-direction: horizontal;
+    justify-content: center;
+    gap:5vw;
+    align-items: center;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.horizline{
+    width:10vw;
+}
+
+.skill-container h4{
+    margin-top:1.2vw;
+}
+
+.skill-icon{
+    width:5vw;
+}
+
+.skill-line{
+    height:12vw;
+}
+
+.skill-button{
+    padding: 0 5.5vw;
+    font-size: 3vw;
+}
+
+.skill-button img{
+    width:1.2vw;
+    height: auto;
+}
+
+#about-section{
+    display:flex;
+    height:45vw;
+    position:relative;
+    justify-content: center;
+    gap:10vw;
+    line-height: 1.5vw;
+    align-items: center;
+}
+.about-skill-title{
+    display:flex;
+    flex-direction: horizontal;
+    align-items: center;
+    gap:2vw;
+}
+.desc-container{
+    width:30vw;
+    font-weight: lighter;
+}
+
+.about-skills{
+    width:30vw;
+}
+
+.about-skill-line{
+    display:flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    margin-left:2vw;
+}
+.about-skill-line-box h5{
+    background-color: #FFF3F5;
+    margin-top:0px;
+    padding:0.4vw 1.5vw;
+    border-radius: 20px;
+}
+
+.learn-more-button{
+    padding: 1.2vw 3.5vw;
+    font-weight:bold;
+    margin-left: 0;
+}
+
+#featured-section{
+    display:flex;
+    flex-direction: column;
+    background-color: #FFF3F5;
+    height:45vw;
+    position:relative;
+    justify-content: center;
+    line-height: 1.5vw;
+    align-items: center;
+    text-align: center;
+}
+
+#featured-section h1{
+    color: #160307;
+    font-size:3.65vw;
 }
 
 .project-boxes {
@@ -112,13 +194,12 @@ button:hover {
 
 .project-text {
     position: relative;
-    margin-bottom: 30px;
 }
 
 .project-text h2 {
     font-size: 1.0vw;
     font-weight: normal;
-    color: black;
+    color: #160307;
     display: inline;
 }
 
@@ -129,9 +210,9 @@ button:hover {
 }
 
 .project-text h1 {
-    font-size: 1.5vw;
+    font-size: 1.0vw;
     font-weight: bold;
-    color: black;
+    color: #160307;
 }
 
 .project-button:hover {
@@ -145,7 +226,24 @@ button:hover {
     border-radius: 10px;
 }
 
-@media (max-width: 480px) /*mobile*/
+.view-all-button{
+    padding: 1.2vw 3.5vw;
+    font-weight:bold;
+    margin-top:8vw;
+}
+
+#experience-section{
+    display:flex;
+    height:45vw;
+    position:relative;
+    gap:10vw;
+    justify-content: center;
+    line-height: 1.5vw;
+    align-items: center;
+    text-align: center;
+}
+/* 
+@media (max-width: 480px) /*mobile
 {
     #circle-container {
         left: 0;
@@ -192,7 +290,7 @@ button:hover {
 
     #intro-title h1 {
         font-size: 30px;
-        font-weight: bold; /* Add spacing between h1 and h2 */
+        font-weight: bold; 
     }
     
     #intro-title h2 {
@@ -200,7 +298,7 @@ button:hover {
         max-width: 100%;
         font-weight: normal;
         margin-inline: 20vw;
-        margin-top: 300px; /* Add spacing between h1 and h2 */
+        margin-top: 300px; 
     }
 
     button.view-all-button {
@@ -234,9 +332,9 @@ button:hover {
         font-size: 15px;
     }
 
-}
-
-@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
+} */
+/* 
+@media (min-width: 480px) and (max-width: 768px)  
 {
     #circle-container {
         top: 25px;
@@ -250,4 +348,4 @@ button:hover {
     #about-me {
         top: 50px;
     }
-}
+} */

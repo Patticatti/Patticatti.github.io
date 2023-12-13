@@ -146,6 +146,13 @@ nav a:hover {
     width:40vw;
 }
 
+.star4{
+    position: fixed;
+    top:55vw;
+    left:5vw;
+    width:40vw;
+}
+
 @media (max-width: 480px) /*mobile*/
 {
     header {

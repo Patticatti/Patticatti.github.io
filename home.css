@@ -5,7 +5,7 @@
 
 #home-page {
     position:absolute;
-    top:5vw;
+    top:2vw;
     display:flex;
     flex-direction:column;
 }

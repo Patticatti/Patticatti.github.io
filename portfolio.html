@@ -231,26 +231,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            adjustPortfolioPageHeight();
-        });
-
-        window.addEventListener("resize", function() {
-            adjustPortfolioPageHeight();
-        });
-
-        function adjustPortfolioPageHeight() {
-            var portfolioPage = document.getElementById("portfolio-page");
-            var lowestElement = document.querySelector(".project-box");
-
-            // Set the height of portfolio-page based on the position of the lowest element
-            if (lowestElement) {
-                var lowestElementPosition = lowestElement.getBoundingClientRect().bottom;
-                portfolioPage.style.height = lowestElementPosition + 1000 + "px";
-            }
-        }
-    </script>
     <div id="contact-section">
         <div class="contact-me">
             <div class="contact-me-startitle">
@@ -282,8 +262,26 @@
             </div>
         </div>
     </div>
-        </div>
-        
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            adjustPortfolioPageHeight();
+        });
+
+        window.addEventListener("resize", function() {
+            adjustPortfolioPageHeight();
+        });
+
+        function adjustPortfolioPageHeight() {
+            var portfolioPage = document.getElementById("portfolio-page");
+            var lowestElement = document.querySelector(".project-box");
+
+            // Set the height of portfolio-page based on the position of the lowest element
+            if (lowestElement) {
+                var lowestElementPosition = lowestElement.getBoundingClientRect().bottom;
+                portfolioPage.style.height = lowestElementPosition + 900 + "px";
+            }
+        }
+    </script>
     </div>  
         
 </body>

@@ -167,12 +167,21 @@ nav a:hover {
     opacity:0.75;
 }
 
+.horizline{
+    width:10vw;
+}
+
+.skill-line{
+    height:12vw;
+}
+
 
 #contact-section{
     background-color: #160307;
     color: #ffffff;
     display:flex;
     height:30vw;
+    width:100vw;
     gap:5vw;
     position:relative;
     justify-content:center;

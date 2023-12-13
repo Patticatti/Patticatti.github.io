@@ -1,0 +1,65 @@
+
+.magstar {
+    position:absolute;
+    left:5vw;
+    top: 3vw;
+    width: 1.5vw;
+    height: auto;
+    margin:0;
+}
+
+.magstar2{
+    position:absolute;
+    right:5vw;
+    top: 30vw;
+    width: 1.2vw;
+    height: auto;
+    margin:0;
+}
+
+.magstar3{
+    position:absolute;
+    right:25vw;
+    top: 36vw;
+    width: 1.0vw;
+    height: auto;
+    margin:0;
+}
+
+.leftstar{
+    position:absolute;
+    left:0;
+    top: -5.5vw;
+    width: 7.0vw;
+    height: auto;
+    margin:0;
+}
+
+.rightstar{
+    position:absolute;
+    right:0;
+    top: -5.5vw;
+    width: 7.0vw;
+    height: auto;
+    margin:0;
+}
+
+.leftblackstar{
+    filter:brightness(0);
+    position:absolute;
+    left:-7vw;
+    top: -5.5vw;
+    width:14.0vw;
+    height: auto;
+    margin:0;
+}
+
+.rightblackstar{
+    filter:brightness(0.05);
+    position:absolute;
+    right:-7vw;
+    top: -5.5vw;
+    width: 14.0vw;
+    height: auto;
+    margin:0;
+}

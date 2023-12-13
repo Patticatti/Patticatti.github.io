@@ -1,0 +1,150 @@
+#portfolio-page {
+    position: relative;
+    margin-top:8vw;
+    width: 100%;
+    font-size:2.0vw;
+    height: 200vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#portfolio-page h1{
+    margin-top:0.5vw;
+}
+.portfolio-icon{
+    width:4vw;
+    height:auto;
+}
+
+
+button.view-all-button {
+    margin-top: 8vw;
+    width: 20vw;
+    padding: 1.8vw 5.0vw;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+    background-color: #2d070e;
+}
+
+.project-boxes {
+    display: flex;
+}
+
+.project-box{
+    position:relative;
+}
+
+.project-text,
+.project-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Additional styling properties as needed */
+}
+
+
+.project-text {
+    text-align: left;
+    pointer-events: none;
+    color: #ffffff;
+    font-weight: bold;
+    opacity:0;
+    margin-inline:20px;
+    transition: opacity 0.2s ease; 
+}
+
+.project-button:hover + .project-text {
+    opacity: 1; 
+}
+
+.project-text h1 {
+    font-size: 2.0vw;
+    line-height: 1.2;
+}
+.project-text h2 {
+    font-size: 1.0vw;
+}
+
+.project-button {
+    background-color: black;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    text-align: left;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.project-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.project-button:hover img {
+    filter: brightness(0.8);
+    transition: filter 0.2s ease;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 480px) /*mobile*/
+{
+    #portfolio-page {
+        position: relative;
+        margin-top:15vw;
+        width: 100%;
+    }
+    .portfolio-icon{
+        width:12vw;
+        height:auto;
+    }
+    #portfolio-page h2{
+        font-size:10.0vw;
+    }
+
+    button.view-all-button {
+        margin-top: 10vw;
+        width: 50vw;
+        padding: 4.0vw 12.0vw;
+    }
+
+    .project-boxes {
+        flex-direction: column;
+    }
+
+    #project-all-boxes{
+        margin-top:0vw;
+    }
+
+    .project-button {
+        width: 70vw;
+        height: 40vw;
+        margin-bottom: 40px;
+    }
+
+    .project-text {
+        top: 0px;
+    }
+
+    .project-text h3, 
+    .project-text h2 {
+        font-size: 12px;
+    }
+
+    .project-text h1 {
+        margin-top:0px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
+{
+}

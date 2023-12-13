@@ -11,32 +11,21 @@
 
 <body>
     <div class="background">
-        <img src="images\backgroundd.png">
+        <img src="images/backgroundd.png">
     </div>
-    <div class="container">
-        <div class="chat-box"></div>
-        <div class="chat-box"></div>
-        <div class="chat-box"></div>
-        <!-- Add more chat boxes as needed -->
+    <div id="page-content">
+        <div class="chats-container">
+            <div class="resize-handle" id="resizeHandle"></div>
+            <div class="grey-container"></div>
+            <div class="blur-box"></div>
+        </div>
+        <div class="container">
+            <div class="chat-box">&#x2191;</div>
+            <div class="chat-box">&#x2191;</div>
+            <div class="chat-box">&#x2191;</div>
+            <div class="bar"></div>
+        </div>
     </div>
-    <script>
-        // Get the container and chat boxes
-        const container = document.getElementById('container');
-        const chatBoxes = document.querySelectorAll('.chat-box');
-    
-        // Dynamically update the clip-path based on chat box positions
-        function updateClipPath() {
-          const clipPathPoints = Array.from(chatBoxes).map(box => {
-            const rect = box.getBoundingClientRect();
-            return `${rect.left - container.getBoundingClientRect().left}px ${rect.top - container.getBoundingClientRect().top}px`;
-          });
-    
-          container.style.setProperty('--clip-path', `polygon(${clipPathPoints.join(', ')})`);
-        }
-    
-        // Call the update function initially and on window resize
-        updateClipPath();
-        window.addEventListener('resize', updateClipPath);
-      </script>
+    <script src="script.js"></script>
 </body>
 </html>

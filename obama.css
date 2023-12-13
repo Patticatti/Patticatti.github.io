@@ -1,35 +1,38 @@
-.overlay {
-    position: absolute;
-    width: 20vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #B30D70, #20A1A2);
-    opacity: 0.5;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  .blur-box {
-    z-index: 1;
-    width: 20vw;
-    height: 100vw;
-    position: absolute;
-    backdrop-filter: blur(3px); /* Adjust the value for the blur effect */
-  }
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width:30vw;
+  overflow: hidden;
+}
 
-  .overlay2 {
+.container::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #B30D70, #20A1A2);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+.chat-box {
+    width: 30vw;
+    height: 10vw;
+    margin-bottom: 10px;
+}
+
+.chat-box::before {
+    content: '';
     position: absolute;
-    right: 0;
-    width: 20vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #B30D70, #20A1A2);
-    opacity: 0.5;
-    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  .blur-box2 {
-    right: 0;
-    z-index: 1;
-    width: 20vw;
-    height: 100vw;
-    position: absolute;
-    backdrop-filter: blur(3px); /* Adjust the value for the blur effect */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    z-index: -1;
   }

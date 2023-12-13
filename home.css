@@ -1,6 +1,7 @@
 #home-page {
     display:flex;
     flex-direction:column;
+    margin-top:4vw;
 }
 
 #intro-section {
@@ -117,7 +118,7 @@
 
 #about-section{
     display:flex;
-    height:45vw;
+    height:43vw;
     position:relative;
     justify-content: center;
     gap:10vw;
@@ -236,11 +237,14 @@
     display:flex;
     height:45vw;
     position:relative;
-    gap:10vw;
+    gap:5vw;
     justify-content: center;
     line-height: 1.5vw;
     align-items: center;
-    text-align: center;
+}
+
+.experience-image{
+    width:50vw;
 }
 /* 
 @media (max-width: 480px) /*mobile

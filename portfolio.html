@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" type="images/x-icon" href="images/icon.png">
+    <link rel="icon" type="images/x-icon" href="images/moyai.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
+    <div class="background">
+        <div id="stars">
+            <img class="bkmult" src="images/background/bkgradmult.png">
+            <img class="star1" src="images/bigstar.png">
+            <img class="star2" src="images/bigstar.png">
+            <img class="star3" src="images/bigstar.png">
+        </div>
+    </div>
+    <div class="content">
     <header>
         <div id="logo-container">
             <a href="index.html" id="logo">
@@ -26,8 +35,10 @@
         </nav>
     </header>
     <div id="portfolio-page">
-        <h1>PORTFOLIO</h1>
-        <div class="project-boxes">
+        <img class="portfolio-icon" src="images/logo.png">
+        <h2>PORTFOLIO</h2>
+        <div id="project-all-boxes">
+            <div class="project-boxes">
             <div class="project-box">
                 <button class="project-button" onclick="window.location.href='your-link-for-poster1.html'">
                     <img class="project-img" src="images/projects/poster1.png" alt="Poster 1">
@@ -111,7 +122,10 @@
                 portfolioPage.style.height = lowestElementPosition + 500 + "px";
             }
         }
-    </script>  
+    </script>
+        </div>
+        
+    </div>  
         
 </body>
 

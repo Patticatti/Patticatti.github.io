@@ -161,6 +161,7 @@
 
 .learn-more-button{
     padding: 1.2vw 3.5vw;
+    font-size:2vw;
     font-weight:bold;
     margin-left: 0;
 }
@@ -216,8 +217,10 @@
     display: inline;
 }
 
-.project-text h1 {
-    font-size: 1.0vw;
+.project-text h4 {
+    margin:0;
+    margin-top: 0.3vw;
+    font-size: 1.5vw;
     font-weight: bold;
     color: #160307;
 }
@@ -234,14 +237,10 @@
 }
 
 .view-all-button{
+    font-size:2vw;
     padding: 1.2vw 3.5vw;
     font-weight:bold;
     margin-top:8vw;
-}
-
-.about-skill-title-icon{
-    width:2vw;
-    height:auto;
 }
 
 #experience-section{
@@ -258,59 +257,8 @@
     width:50vw;
 }
 
-#contact-section{
-    background-color: #160307;
-    color: #ffffff;
-    display:flex;
-    height:30vw;
-    gap:5vw;
-    position:relative;
-    justify-content:center;
-    align-items:center;
-}
-
-.contact-me h4{
-    opacity:0.86;
-    color: #ffffff;
-    font-weight: initial;
-    max-width:40vw;
-}
-.contact-me-startitle{
-    height:5vw;
-    display:flex;
-    align-items:center;
-    gap:2vw;
-}
-.contact-social-icons{
-    display:flex;
-    margin:0;
-}
-.social-button{
-    margin-inline:0.2vw;
-    padding:0.5vw 0.5vw;
-    border-radius: 10px;
-    align-items:center;
-}
-.social-icon{
-    width:4vw;
-    height:auto;
-}
-
-.contact-email-phone{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-}
-.mail-number{
-    opacity:0.86;
-    text-align: center;
-    justify-content: center;
-    padding-inline:3vw;
-}
-
-.mail-number h4{
-    color: #ffffff;
-    margin-top:1vw;
+.bkmult{
+    top:0vw;
 }
 /*
 @media (max-width: 480px)

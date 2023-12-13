@@ -17,16 +17,6 @@
 }
 
 
-.bkmult{
-    height:20vw;
-    width:100vw;
-    position: absolute;
-    top:0vw;
-    mix-blend-mode: hard-light;
-    z-index: 3;
-    opacity:0.75;
-}
-
 button.view-all-button {
     margin-top: 8vw;
     width: 20vw;

@@ -125,24 +125,28 @@ nav a:hover {
     margin-inline: 20px;
 }
 
+#stars{
+    opacity:0.3;
+}
 .star1{
     position: fixed;
     left:-3vw;
-    width:40vw;
+    top: -3vw;
+    width:35vw;
 }
 .star2{
     position: fixed;
-    top:30vw;
-    right:25vw;
-    transform: rotate(15deg);
-    width:30vw;
+    top:35vw;
+    right:35vw;
+    transform: rotate(40deg);
+    width:40vw;
 }
 
 .star3{
     position: fixed;
-    top:-15vw;
+    top:0vw;
     right:-5vw;
-    transform: rotate(180deg);
+    transform: rotate(-20deg);
     width:40vw;
 }
 
@@ -151,6 +155,77 @@ nav a:hover {
     top:55vw;
     left:5vw;
     width:40vw;
+}
+
+.bkmult{
+    height:30vw;
+    width:100vw;
+    position: absolute;
+    top:5vw;
+    mix-blend-mode: hard-light;
+    z-index: 3;
+    opacity:0.75;
+}
+
+
+#contact-section{
+    background-color: #160307;
+    color: #ffffff;
+    display:flex;
+    height:30vw;
+    gap:5vw;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-me h4{
+    opacity:0.86;
+    color: #ffffff;
+    font-weight: initial;
+    max-width:40vw;
+}
+.contact-me-startitle{
+    height:5vw;
+    display:flex;
+    align-items:center;
+    gap:2vw;
+}
+.contact-social-icons{
+    display:flex;
+    margin:0;
+}
+.about-skill-title-icon{
+    width:2vw;
+    height:auto;
+}
+
+.social-button{
+    margin-inline:0.2vw;
+    padding:0.5vw 0.5vw;
+    border-radius: 10px;
+    align-items:center;
+}
+.social-icon{
+    width:4vw;
+    height:auto;
+}
+
+.contact-email-phone{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.mail-number{
+    opacity:0.86;
+    text-align: center;
+    justify-content: center;
+    padding-inline:3vw;
+}
+
+.mail-number h4{
+    color: #ffffff;
+    margin-top:1vw;
 }
 
 @media (max-width: 480px) /*mobile*/

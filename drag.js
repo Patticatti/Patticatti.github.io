@@ -1,5 +1,5 @@
 const resizeHandle = document.getElementById('resizeHandle');
-    const chatBox = document.querySelector('.chat-box');
+    const chatBox = document.querySelector('.container');
 
     let isResizing = false;
 

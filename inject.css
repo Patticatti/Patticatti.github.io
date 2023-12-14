@@ -3,6 +3,7 @@
     --box-width: 150px;
     --flex-width:50vw;
     --box-height: 100px;
+    --box-padding:20px;
   }
 
   #flex-container {
@@ -12,18 +13,17 @@
       width:var(--flex-width);
       /*flex-direction: column; Reverse the order of items in the column */
       bottom:10vh;
-      overflow-y: hidden; /* Add scroll if the content exceeds the container height */
-  }
-
-  #flex-container:hover {
-  overflow-y: scroll; /* Show the overflow when the mouse is over the container */
+      padding:var(--box-padding);
+      overflow-x:hidden;
+      overflow-y:scroll; /* Add scroll if the content exceeds the container height */
   }
 
   .box {
-    padding:20px;
-    margin: 3px;
+    padding:var(--box-padding);
+    margin:10px;
     background-color: var(--main-color);
-    max-width: 500px;
+    overflow-wrap: break-word;
+    max-width: 80%;
   }
 
   .input-container {

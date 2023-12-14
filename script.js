@@ -18,3 +18,8 @@ function handleMouseMove(event) {
     chatsContainer.style.width = `${newWidth}px`;
   }
 }
+
+function startEditing(box) {
+    const input = box.querySelector('input');
+    input.focus();
+  }

@@ -1,12 +1,15 @@
-#page-content{
+#left-page-content{
+    position:absolute;
     height:100vh;
-    width:100vw;
+    width:50vw;
     display:flex;
+    gap:15px;
 }
 
 .chats-container{
     height:inherit;
-    width: 20vw;
+    width: 50%;
+    max-width:50vw;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -39,7 +42,7 @@
 .container{
     background: transparent;
     height: auto;
-    width:20vw;
+    width:50%;
     position:relative; /* relative here */
     display:flex;
     flex-direction: column;
@@ -73,4 +76,25 @@
     right: -5px;
     cursor: ew-resize; /* East-west (horizontal) resize cursor */
     z-index: 1;
+  }
+
+  .editable-box {
+    position:absolute;
+    width: 200px;
+    height: 100px;
+    left:50vw;
+    bottom:5vw;
+    background-color: #B30D70;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: text; /* Change cursor to text when hovering over the box */
+  }
+
+  .editable-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
   }

@@ -15,6 +15,6 @@ resizeHandle.addEventListener('mousedown', (event) => {
 function handleMouseMove(event) {
   if (isResizing) {
     const newWidth = event.clientX - chatsContainer.getBoundingClientRect().left;
-    chatBox.style.width = `${newWidth}px`;
+    chatsContainer.style.width = `${newWidth}px`;
   }
 }

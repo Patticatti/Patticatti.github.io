@@ -7,21 +7,25 @@
     --box-padding:20px;
   }
 
+  ::-webkit-scrollbar {
+    width: 0px; /* width of the scrollbar */
+    height:0px;
+  }
+
   #chat-container{
     display:flex;
     position:absolute;
     width:100%;
-    height:80vh;
+    max-height:80vh;
     bottom:10vh;
     overflow-x:hidden;
     overflow-y:scroll;
   }
 
   #right-chat-container{
-      position:absolute;
+      position:relative;
       display: flex;
       flex-direction: column;
-      height:auto;
       width:var(--right-chat-width);
       bottom:0;
       padding-inline:var(--chat-padding);
@@ -39,7 +43,7 @@
   }
 
   .input-container {
-    display: chat;
+    display: flex;
     justify-content: space-between;
     padding: 10px;
     position: fixed;

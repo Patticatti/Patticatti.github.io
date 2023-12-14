@@ -2,6 +2,7 @@
     --main-color: #3498db;
     --box-width: 150px;
     --flex-width:50vw;
+    --flex-padding:1vw;
     --box-height: 100px;
     --box-padding:20px;
   }
@@ -13,17 +14,18 @@
       width:var(--flex-width);
       /*flex-direction: column; Reverse the order of items in the column */
       bottom:10vh;
-      padding:var(--box-padding);
+      padding-inline:var(--flex-padding);
       overflow-x:hidden;
       overflow-y:scroll; /* Add scroll if the content exceeds the container height */
   }
 
   .box {
     padding:var(--box-padding);
-    margin:10px;
+    margin-top:10px;
     background-color: var(--main-color);
     overflow-wrap: break-word;
-    max-width: 80%;
+    max-width: 90%;
+    border-radius: 20px 20px 20px 0;
   }
 
   .input-container {

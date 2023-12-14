@@ -4,48 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex Container with Chat Boxes</title>
-  <style>
-    :root {
-      --main-color: #3498db;
-      --box-width: 150px;
-      --flex-width:50vw;
-      --box-height: 100px;
-    }
-
-    #flex-container {
-        position:absolute;
-        height:auto;
-        max-height:80vh;
-        width:var(--flex-width);
-        /*flex-direction: column; Reverse the order of items in the column */
-        bottom:10vh;
-        overflow-y: hidden; /* Add scroll if the content exceeds the container height */
-    }
-
-    #flex-container:hover {
-    overflow-y: scroll; /* Show the overflow when the mouse is over the container */
-    }
-
-    .box {
-      padding:20px;
-      margin: 3px;
-      background-color: var(--main-color);
-      max-width: 500px;
-    }
-
-    .input-container {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-    }
-
-    .input-box {
-      width: 30vw;
-      height: 5vh;
-    }
-  </style>
+  <link rel="stylesheet" href="inject.css">
 </head>
 <body>
   <div id="flex-container"></div>

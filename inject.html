@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex Container with Chat Boxes</title>
   <style>
+    :root {
+      --main-color: #3498db;
+      --box-width: 150px;
+      --flex-width:50vw;
+      --box-height: 100px;
+    }
+
     #flex-container {
         position:absolute;
         height:auto;
         max-height:80vh;
-        max-width:50vw;
+        width:var(--flex-width);
         /*flex-direction: column; Reverse the order of items in the column */
         bottom:10vh;
         overflow-y: hidden; /* Add scroll if the content exceeds the container height */
@@ -22,12 +29,8 @@
     .box {
       padding:20px;
       margin: 3px;
-      background-color: lightblue;
-      inline-size: min-content;
-      overflow-wrap: break-word;
-      overflow-y: hidden;
-      width:min-content;
-      max-width: 150px;
+      background-color: var(--main-color);
+      max-width: 500px;
     }
 
     .input-container {

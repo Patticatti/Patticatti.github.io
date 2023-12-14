@@ -24,6 +24,7 @@
     margin-top:10px;
     background-color: var(--main-color);
     overflow-wrap: break-word;
+    width:min-content;
     max-width: 90%;
     border-radius: 20px 20px 20px 0;
   }

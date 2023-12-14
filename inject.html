@@ -7,10 +7,10 @@
   <style>
     #flex-container {
         position:absolute;
-        display: grid;
         height:auto;
         max-height:80vh;
-        flex-direction: column; /* Reverse the order of items in the column */
+        max-width:50vw;
+        /*flex-direction: column; Reverse the order of items in the column */
         bottom:10vh;
         overflow-y: hidden; /* Add scroll if the content exceeds the container height */
     }
@@ -20,11 +20,14 @@
     }
 
     .box {
-      width: 100px;
-      height: 50px;
-      padding:5px;
+      padding:20px;
       margin: 3px;
       background-color: lightblue;
+      inline-size: min-content;
+      overflow-wrap: break-word;
+      overflow-y: hidden;
+      width:min-content;
+      max-width: 150px;
     }
 
     .input-container {
@@ -36,8 +39,8 @@
     }
 
     .input-box {
-      width: 200px;
-      height: 6vh;
+      width: 30vw;
+      height: 5vh;
     }
   </style>
 </head>

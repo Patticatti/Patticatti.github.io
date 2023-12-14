@@ -19,12 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   
-    document.getElementById('topInput').addEventListener('keydown', function (event) {
-      if (event.key === 'Enter') {
-        addBox('topInput');
-      }
-    });
-  
     document.getElementById('messageBar').addEventListener('keydown', function (event) {
       if (event.key === 'Enter') {
         addBox('messageBar');

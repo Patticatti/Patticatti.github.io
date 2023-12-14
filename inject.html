@@ -6,17 +6,24 @@
   <title>Flex Container with Chat Boxes</title>
   <style>
     #flex-container {
-        position:fixed;
-        display: flex;
+        position:absolute;
+        display: grid;
+        height:auto;
+        max-height:80vh;
         flex-direction: column; /* Reverse the order of items in the column */
         bottom:10vh;
-        overflow-y: auto; /* Add scroll if the content exceeds the container height */
+        overflow-y: hidden; /* Add scroll if the content exceeds the container height */
+    }
+
+    #flex-container:hover {
+    overflow-y: scroll; /* Show the overflow when the mouse is over the container */
     }
 
     .box {
       width: 100px;
       height: 50px;
-      margin: 10px;
+      padding:5px;
+      margin: 3px;
       background-color: lightblue;
     }
 
@@ -36,10 +43,6 @@
 </head>
 <body>
   <div id="flex-container"></div>
-  <div class="input-container">
-    <input type="text" class="input-box" id="topInput" placeholder="Type your message (Top)">
-    <button onclick="addBox('topInput')">Send</button>
-  </div>
   <div class="input-container">
     <input type="text" class="input-box" id="messageBar" placeholder="Type your message (Bottom)">
     <button onclick="addBox('messageBar')">Send</button>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const flexContainer = document.getElementById('flex-container');
+    const flexContainer = document.getElementById('right-chat-container');
     function addBox(inputId) {
       const inputBox = document.getElementById(inputId);
       const message = inputBox.value.trim();

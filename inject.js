@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
   
       if (message !== '') {
         const newBox = document.createElement('div');
-        newBox.classList.add('box');
+        if (message == 'bro'){
+            newBox.classList.add('rbox');
+        }
+        else{
+            newBox.classList.add('box');
+        }
         newBox.textContent = message;
         rightChatContainer.appendChild(newBox);
   

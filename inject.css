@@ -33,6 +33,18 @@
 
 
   .box {
+    align-self:flex-end;
+    padding:var(--box-padding);
+    margin-top:10px;
+    background-color: var(--main-color);
+    overflow-wrap: break-word;
+    width:min-content;
+    max-width: 85%;
+    border-radius: 20px 20px 0px 20px;
+  }
+
+  .rbox {
+    align-self: flex-start;
     padding:var(--box-padding);
     margin-top:10px;
     background-color: var(--main-color);

@@ -161,7 +161,6 @@ nav a:hover {
     height:30vw;
     width:100vw;
     position: absolute;
-    top:0vw;
     mix-blend-mode: hard-light;
     z-index: 3;
     opacity:0.75;

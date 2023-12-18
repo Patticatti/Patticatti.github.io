@@ -93,13 +93,13 @@
 
 #skill-section h5{
     text-align:center;
-    padding-inline:20vw;
-    margin-bottom: 3vw;
+    max-width:35vw;
+    margin-bottom: 5vw;
 }
 
 #skill-section h2{
     margin:0;
-    padding-top:2vw;
+    padding-top:5vw;
 }
 
 .skill-section {
@@ -114,9 +114,6 @@
     align-items: center;
     text-align: center;
 }
-.horizline{
-    width:10vw;
-}
 
 .skill-container h4{
     margin-top:1.2vw;
@@ -124,10 +121,6 @@
 
 .skill-icon{
     width:3.5vw;
-}
-
-.skill-line{
-    height:12vw;
 }
 
 .skill-button{
@@ -146,7 +139,6 @@
     position:relative;
     justify-content: center;
     gap:10vw;
-    line-height: 1.5vw;
     align-items: center;
 }
 .about-skill-title{
@@ -177,13 +169,6 @@
     border-radius: 20px;
 }
 
-.learn-more-button{
-    padding: 1.2vw 3.5vw;
-    font-size:2vw;
-    font-weight:bold;
-    margin-left: 0;
-}
-
 #featured-section{
     display:flex;
     flex-direction: column;
@@ -191,7 +176,6 @@
     height:45vw;
     position:relative;
     justify-content: center;
-    line-height: 1.5vw;
     align-items: center;
     text-align: center;
 }
@@ -255,9 +239,6 @@
 }
 
 .view-all-button{
-    font-size:2vw;
-    padding: 1.2vw 3.5vw;
-    font-weight:bold;
     margin-top:8vw;
 }
 
@@ -267,7 +248,6 @@
     position:relative;
     gap:5vw;
     justify-content: center;
-    line-height: 1.5vw;
     align-items: center;
 }
 

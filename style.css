@@ -8,8 +8,9 @@ h1 { /*introtitle*/
 h2 { /*titles*/
     font-family: "josefin-slab", serif;
     color: #160307;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight:700;
+    margin-block: 1vw;
     font-style: normal;
 }
 h3 { /*sub titles*/
@@ -29,7 +30,8 @@ h4 { /*mini titles*/
 h5 { /*regular*/
     font-family: "josefin-sans", serif;
     color: #160307;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
+    line-height: 1.5vw;
     font-weight: 300;
     font-style:normal;
 }
@@ -72,7 +74,7 @@ header {
     font-size: 15px;
     font-weight: 300;
     font-style:normal;
-    padding: 10px;
+    padding-block: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,11 +85,12 @@ header {
 button {
     color: #ffffff;
     background-color: #FE375D;
-    font-family: JosefinSans;
+    font-family: 'josefin-sans',serif;
+    font-weight:500;
     border: none;
-    padding: 0.7vw 3.0vw;
+    padding: 1.2vw 3.5vw;
+    font-size:1.5vw;
     margin: 0px 0.8vw;
-    font-size: 1.5vw;
     cursor: pointer;
     border-radius: 30px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -176,11 +179,12 @@ nav a:hover {
 }
 
 .horizline{
-    width:10vw;
+    width:5vw;
 }
 
 .skill-line{
-    height:12vw;
+    margin-top:1vw;
+    height:10vw;
 }
 
 
@@ -195,8 +199,10 @@ nav a:hover {
     justify-content:center;
     align-items:center;
 }
-
-.contact-me h4{
+.contact-me h2{
+    color:#ffffff;
+}
+.contact-me h5{
     opacity:0.86;
     color: #ffffff;
     font-weight: initial;

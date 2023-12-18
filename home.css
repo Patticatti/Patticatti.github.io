@@ -5,21 +5,23 @@
 
 #home-page {
     position:absolute;
-    top:0vw;
+    top:50px;
     display:flex;
     flex-direction:column;
 }
 
 #intro-section {
-    height:40vw;
+    height:300px;
     display: flex;
+    height:40vw;
+    position:relative;
     width: 100%;
     flex-direction: column;
     align-items: stretch;
 }
 
 #intro-title {
-    height:40vw;
+    height:inherit;
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -80,16 +82,32 @@
 
 #skill-section {
     background-color: #FFF3F5;
-    height:20vw;
+    height:40vw;
     position:relative;
     display: flex;
     width: 100%;
-    flex-direction: horizontal;
+    flex-direction: column;
     justify-content: center;
-    gap:5vw;
     align-items: center;
 }
 
+#skill-section h5{
+    text-align:center;
+    padding-inline:20vw;
+    margin-bottom: 3vw;
+}
+
+#skill-section h2{
+    margin:0;
+    padding-top:2vw;
+}
+
+.skill-section {
+    height:inherit;
+    display:flex;
+    gap:5vw;
+    flex-direction:horizontal;
+}
 .skill-container{
     display: flex;
     flex-direction: column;
@@ -105,7 +123,7 @@
 }
 
 .skill-icon{
-    width:5vw;
+    width:3.5vw;
 }
 
 .skill-line{

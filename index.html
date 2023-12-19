@@ -28,12 +28,14 @@
                 <p id="name">PATRICIA TANI</p>
             </div>
             <nav>
+                <img class="close-menu" src="images/home/forwardarrow.svg" width="20px"height="20px"onclick="toggleNav()"></img>
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
                 <a href="portfolio.html">PORTFOLIO</a>
                 <a href="experience.html">EXPERIENCE</a>
                 <a href="contact.html">CONTACT</a>
             </nav>
+            <img class="menu-icon" src="images/burgermenu.svg" onclick="toggleNav()"></img>
         </header>
         <div id="home-page">
             <div id="intro-section">
@@ -66,7 +68,7 @@
                     <div class="skill-container">
                         <img class="skill-icon" src="images/home/devicon.svg">
                         <h4>developer</h4>
-                        <button class="skill-button" onclick="window.location.href='obama.html'">
+                        <button class="skill-button" onclick="window.location.href='portfolio.html'">
                             <img src="images/home/forwardarrow.svg" width="18px">
                         </button>
                     </div>
@@ -261,27 +263,14 @@
             </div>
         </div>
     </div>
-    
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            adjustPortfolioPageHeight();
-        });
-
-        window.addEventListener("resize", function() {
-            adjustPortfolioPageHeight();
-        });
-
-        function adjustPortfolioPageHeight() {
-            var portfolioPage = document.getElementById("featured");
-            var lowestElement = document.getElementById("about-me");
-
-            // Set the height of portfolio-page based on the position of the lowest element
-            if (lowestElement) {
-                var lowestElementPosition = lowestElement.getBoundingClientRect().bottom;
-                portfolioPage.style.height = lowestElementPosition + 0 + "px";
-            }
+    <script>
+        var isNavOpen = false;
+        var nav = document.querySelector('nav');
+        function toggleNav() {
+            isNavOpen=!isNavOpen;
+            nav.style.right = isNavOpen ? '0' : '-250px';
         }
-    </script>          -->
+    </script>
 </body>
 
 </html>

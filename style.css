@@ -128,6 +128,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.menu-icon {
+    cursor: pointer;
+    display:none;
+}
+
+.menu-icon:checked + nav{
+    right: 0;
+}
+
 #logo-container {
     display: flex;
     align-items: center;
@@ -285,14 +294,23 @@ nav a:hover {
 @media (max-width: 480px) /*mobile*/
 {
     header {
-        font-size:12px;
+        font-size:1rem;
     }
-    nav a{
-        margin: 0 6px;
+
+    nav {
+        display:none;
     }
+
+    .menu-icon {
+        height: 40px; /* Adjust the height based on your image size */
+        width:40px;
+        margin-right:20px;
+        display:block;
+    }
+
     .logo{
-        height: 20px;
-        margin-inline: 8px;
+        height: 30px;
+        margin-inline: 20px;
     }
 
     .buttons {
@@ -342,12 +360,36 @@ nav a:hover {
     header {
         font-size:16px;
     }
-    nav a{
-        margin: 0 10px;
+    nav{
+        flex-direction: column;
+        align-items:start;
+        background-color: var(--dark-color);
+        position: fixed;
+        right:-250px;
+        top:0;
+        width: 250px;
+        height: 100%;
+        transition: right 0.3s ease-in-out;
     }
+    nav a, nav img{
+        margin-top:20px;
+        padding-block: 15px;;
+        padding-inline:10px;
+    }
+
+    .menu-icon {
+        display:block;
+        background-size: cover;
+        background-position: center; /* Center the image */
+        height: 40px; /* Adjust the height based on your image size */
+        width:40px;
+        background-color: transparent;
+        margin-right:20px;
+    }
+
     .logo{
-        height: 20px;
-        margin-inline: 10px;
+        height: 30px;
+        margin-inline: 20px;
     }
     h2{
         font-size:2.5rem;

@@ -19,6 +19,39 @@
     gap:10vw;
 }
 
+.hobbies-container{
+    position:relative;
+}
+
+.hobbies-buttons{
+    display:flex;
+    flex-direction: row;
+    padding:5vw;
+    justify-content: center;
+}
+
+.hobby-button{
+    background-color: transparent;
+    color:var(--dark-color);
+    box-shadow: none;
+}
+
+.hobby-button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.hobby-desc{
+    display:flex;
+    justify-content: center;
+}
+
+.hobby-image{
+    width: 35vw;
+    height:auto;
+}
+
 .selfie{
     width:35vw;
     height:50vw;

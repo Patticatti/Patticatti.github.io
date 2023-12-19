@@ -1,3 +1,10 @@
+:root {
+    --background-color: #fffbfb;
+    --secondary-color: #FFF3F5;
+    --accent-color: #FE375D;
+    --dark-color: #160307;
+  }
+
 h1 { /*introtitle*/
     font-family: "josefin-sans", serif;
     color: rgb(255, 255, 255);
@@ -7,37 +14,37 @@ h1 { /*introtitle*/
 }
 h2 { /*titles*/
     font-family: "josefin-slab", serif;
-    color: #160307;
-    font-size: 3.5vw;
+    color: var(--dark-color);
+    font-size: 3.0rem;
     font-weight:700;
     margin-block: 1vw;
     font-style: normal;
 }
 h3 { /*sub titles*/
     font-family: "josefin-slab", serif;
-    color: #160307;
-    font-size: 2.5vw;
+    color: var(--dark-color);
+    font-size: 2.0rem;
     font-weight:700;
     font-style: normal;
 }
 h4 { /*mini titles*/
     font-family: "josefin-slab", serif;
-    color: #160307;
-    font-size: 1.6vw;
+    color: var(--dark-color);
+    font-size: 1.2rem;
     font-weight:700;
     font-style: normal;
 }
 h5 { /*regular*/
     font-family: "josefin-sans", serif;
-    color: #160307;
-    font-size: 1.0vw;
-    line-height: 1.5vw;
+    color: var(--dark-color);
+    font-size: 1.0rem;
+    line-height: 1.5rem;
     font-weight: 300;
     font-style:normal;
 }
 h6 { /*mini regular*/
     font-family: "josefin-sans", serif;
-    color: #160307;
+    color: var(--dark-color);
     font-size: 0.8vw;
     font-weight: 300;
     font-style:normal;
@@ -55,7 +62,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff8f8;
+    background-color: #fffbfb;
     background-size: cover;
     z-index: -1; /* Place the background behind other content */
 }
@@ -68,7 +75,7 @@ body {
 }
 
 header {
-    background-color: #100003;
+    background-color: var(--dark-color);
     position:fixed;
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -84,13 +91,14 @@ header {
 
 button {
     color: #ffffff;
-    background-color: #FE375D;
+    background-color: var(--accent-color);
     font-family: 'josefin-sans',serif;
     font-weight:500;
     border: none;
-    padding: 1.2vw 3.5vw;
-    font-size:1.5vw;
-    margin: 0px 0.8vw;
+    padding: 1.2rem 5.0rem;
+    font-size:1.5rem;
+    margin: 0px 0.8rem;
+    margin-bottom:5vw;
     cursor: pointer;
     border-radius: 30px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -170,8 +178,6 @@ nav a:hover {
 }
 
 .bkmult{
-    height:30vw;
-    width:100vw;
     position: absolute;
     mix-blend-mode: hard-light;
     z-index: 3;
@@ -189,7 +195,7 @@ nav a:hover {
 
 
 #contact-section{
-    background-color: #160307;
+    background-color: var(--dark-color);
     color: #ffffff;
     display:flex;
     height:30vw;
@@ -205,8 +211,8 @@ nav a:hover {
 .contact-me h5{
     opacity:0.86;
     color: #ffffff;
-    font-weight: initial;
-    max-width:40vw;
+    max-width:35vw;
+    margin-top:1vw;
 }
 .contact-me-startitle{
     height:5vw;
@@ -219,8 +225,8 @@ nav a:hover {
     margin:0;
 }
 .about-skill-title-icon{
-    width:2vw;
-    height:auto;
+    width:1.5rem;
+    height:1.5rem;
 }
 
 .social-button{
@@ -270,30 +276,11 @@ nav a:hover {
 
     button {
         padding: 10px 20px;
-        margin: 0px 0.8vw;
-        font-size: 15px;
+        margin: 0rem 0.8rem;
+        font-size: 1.5rem;
         cursor: pointer;
         border-radius: 30px; 
     }
-    h1 { /*introtitle*/
-        font-size: 50px;
-    }
-    h2 { /*titles*/
-        font-size: 20px;
-    }
-    h3 { /*sub titles*/
-        font-size: 18px;
-    }
-    h4 { /*mini titles*/
-        font-size: 16px;
-    }
-    h5 { /*regular*/
-        font-size: 12px;
-    }
-    h6 { /*mini regular*/
-        font-size: 8px;
-    }
-
 }
 
 @media (min-width: 480px) and (max-width: 768px)  /*tablet*/
@@ -307,5 +294,14 @@ nav a:hover {
     .logo{
         height: 20px;
         margin-inline: 10px;
+    }
+    h2{
+        font-size:2.5rem;
+    }
+    h4{
+        font-size:1.2rem;
+    }
+    h5{
+        line-height: 1.2rem;
     }
 }

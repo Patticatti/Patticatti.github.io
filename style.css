@@ -338,4 +338,8 @@ nav a:hover {
     .contact-email-phone{
         flex-direction: column;
     }
+
+    .button {
+        padding:0.8rem 3.0rem;
+    }
 }

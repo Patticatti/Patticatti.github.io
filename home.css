@@ -13,6 +13,7 @@
 #intro-section {
     position: relative;
     display:flex;
+    height:90vh;
     align-items: center;
 }
 
@@ -202,6 +203,7 @@ h2{
     text-align: left;
     border: none;
     padding: 0;
+    margin-bottom:0;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -249,6 +251,7 @@ h2{
 }
 
 .learn-more-button{
+    padding:0.8rem 2.3rem;
     margin-bottom:5vw;
 }
 

@@ -13,7 +13,7 @@
 #intro-section {
     position: relative;
     display:flex;
-    height:90vh;
+    height:60vw;
     align-items: center;
 }
 
@@ -154,9 +154,6 @@ h2{
     font-weight: lighter;
 }
 
-.about-skills{
-}
-
 .about-skill-blobs{
     display:flex;
     flex-direction: column;
@@ -273,6 +270,24 @@ h2{
 
 @media (max-width: 480px)
 {
+    #intro-section{
+        height:70vh;
+        flex-direction: column-reverse;
+    }
+
+    .intro-image{
+        width:40%;
+        margin-right:0;
+    }
+    
+
+    #intro-section h1 {
+        width: 90%;
+        margin-left: 0;
+        margin-top:1rem;
+        font-size:5.0rem;
+        text-align:center;
+    }
     #about-section{
         flex-direction: column;
     }
@@ -281,21 +296,6 @@ h2{
         justify-content:center;
     }
 
-    #intro-section{
-        flex-direction: column-reverse;
-    }
-
-    .intro-image{
-        margin-right:0;
-    }
-    
-
-    #intro-section h1 {
-        width: 70%;
-        margin-left: 0;
-        font-size:3.0rem;
-        text-align:center;
-    }
     #experience-section{
         flex-direction: column;
     }
@@ -359,6 +359,25 @@ h2{
 
 @media (min-width: 480px) and (max-width: 768px)  
 {
+    #intro-section{
+        height:70vh;
+        flex-direction: column-reverse;
+    }
+
+    .intro-image{
+        width:40%;
+        margin-right:0;
+    }
+    
+
+    #intro-section h1 {
+        width: 90%;
+        margin-left: 0;
+        margin-top:1rem;
+        font-size:5.0rem;
+        text-align:center;
+    }
+
     .desc-container{
     width:45vw;
     }

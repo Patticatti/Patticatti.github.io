@@ -270,6 +270,11 @@
             isNavOpen=!isNavOpen;
             nav.style.right = isNavOpen ? '0' : '-250px';
         }
+        document.body.addEventListener('click', function(e) {
+            if (isNavOpen && !nav.contains(e.target) && e.target !== document.querySelector('.menu-icon')) {
+                toggleNav();
+            }
+        });
     </script>
 </body>
 

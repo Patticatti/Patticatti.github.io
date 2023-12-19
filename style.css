@@ -114,6 +114,10 @@ nav {
     align-items: center;
 }
 
+nav img{
+    display:none;
+}
+
 nav a {
     color: #ffffff;
     text-decoration: none;

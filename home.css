@@ -351,6 +351,9 @@ h2{
     .skill-button img{
         height:0.8rem;
     }
+    #featured-section h2{
+        width:70%;
+    }
 
     .view-all-button{
         padding:0.8rem 5rem;
@@ -364,6 +367,9 @@ h2{
     #intro-section{
         height:70vh;
         flex-direction: column-reverse;
+    }
+    #featured-section h2{
+        width:70%;
     }
 
     .intro-image{

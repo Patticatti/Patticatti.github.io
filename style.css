@@ -5,12 +5,16 @@
     --dark-color: #160307;
   }
 
+  h1,h2,h3,h4,h5,h6{
+    font-style:normal;
+    z-index: 3;
+  }
+
 h1 { /*introtitle*/
     font-family: "josefin-sans", serif;
     color: rgb(255, 255, 255);
     font-size: 12vw;
     font-weight:500;
-    font-style: normal;
 }
 h2 { /*titles*/
     font-family: "josefin-slab", serif;
@@ -18,21 +22,18 @@ h2 { /*titles*/
     font-size: 3.0rem;
     font-weight:700;
     margin-block: 1vw;
-    font-style: normal;
 }
 h3 { /*sub titles*/
     font-family: "josefin-slab", serif;
     color: var(--dark-color);
     font-size: 2.0rem;
     font-weight:700;
-    font-style: normal;
 }
 h4 { /*mini titles*/
     font-family: "josefin-slab", serif;
     color: var(--dark-color);
     font-size: 1.2rem;
     font-weight:700;
-    font-style: normal;
 }
 h5 { /*regular*/
     font-family: "josefin-sans", serif;
@@ -40,14 +41,13 @@ h5 { /*regular*/
     font-size: 1.0rem;
     line-height: 1.5rem;
     font-weight: 300;
-    font-style:normal;
+
 }
 h6 { /*mini regular*/
     font-family: "josefin-sans", serif;
     color: var(--dark-color);
     font-size: 0.8vw;
     font-weight: 300;
-    font-style:normal;
 }
 
 body {
@@ -317,6 +317,7 @@ nav a:hover {
 
     .contact-me h5{
         align-self: center;
+        max-width:70vw;
         text-align: center;
     }
 
@@ -364,5 +365,9 @@ nav a:hover {
 
     .button {
         padding:0.8rem 3.0rem;
+    }
+
+    #contact-section .skill-line{
+        display:none;
     }
 }

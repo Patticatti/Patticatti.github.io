@@ -26,3 +26,18 @@
     margin-bottom:5vw;
     border-radius: 10px;
 }
+
+@media (max-width: 480px)
+{
+    .halfsplit{
+        flex-direction: column;
+    }
+    .about-me-desc{
+        width:70vw;
+    }
+    .selfie{
+        width:70vw;
+        height:100%;
+    }
+
+}

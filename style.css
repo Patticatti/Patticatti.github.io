@@ -197,10 +197,16 @@ nav a:hover {
     background-color: var(--dark-color);
     color: #ffffff;
     display:flex;
-    gap:5vw;
+    gap:2vw;
     position:relative;
     justify-content:center;
     align-items:center;
+}
+
+.contact-me{
+    display:flex;
+    flex-direction: column;
+    margin-top:5vw;
 }
 .contact-me h2{
     color:#ffffff;
@@ -212,7 +218,6 @@ nav a:hover {
     margin-top:1vw;
 }
 .contact-me-startitle{
-    height:5vw;
     display:flex;
     align-items:center;
     gap:2vw;
@@ -272,7 +277,7 @@ nav a:hover {
     }
 
     button {
-        padding: 10px 20px;
+        padding: 0.8rem 3rem;
         margin: 0rem 0.8rem;
         font-size: 1.5rem;
         cursor: pointer;
@@ -285,6 +290,26 @@ nav a:hover {
 
     #contact-section{
         flex-direction: column;
+    }
+
+    .contact-me h5{
+        align-self: center;
+        text-align: center;
+    }
+
+    .contact-social-icons{
+        justify-content: center;
+        align-self: center;
+        gap:5vw;
+    }
+
+    .social-icon{
+        width:15vw;
+        height:auto;
+    }
+
+    #contact-section .skill-line{
+        display:none;
     }
 }
 
@@ -308,5 +333,9 @@ nav a:hover {
     }
     h5{
         line-height: 1.2rem;
+    }
+
+    .contact-email-phone{
+        flex-direction: column;
     }
 }

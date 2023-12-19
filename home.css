@@ -113,7 +113,7 @@ h2{
 }
 
 .skill-icon{
-    width:3.5vw;
+    width:3.5rem;
 }
 
 .skill-button{
@@ -207,13 +207,22 @@ h2{
 }
 
 .project-text {
+    margin-top:1rem;
     position: relative;
 }
 
+.project-content{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
 .project-text h4 {
+    margin-top: 0.3vw;
     font-size: 1.0rem;
-    font-weight: normal;
+    font-weight: 700;
     color: #160307;
+
     display: inline;
 }
 
@@ -221,14 +230,6 @@ h2{
     font-size: 0.8rem;
     color: var(--dark-color);
     display: inline;
-}
-
-.project-text h4 {
-    margin:0;
-    margin-top: 0.3vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #160307;
 }
 
 .project-button:hover {
@@ -244,6 +245,7 @@ h2{
 
 .view-all-button{
     margin-top:3vw;
+    margin-bottom:5vw;
 }
 
 .learn-more-button{
@@ -272,8 +274,16 @@ h2{
         flex-direction: column;
     }
 
+    .about-skill-title{
+        justify-content:center;
+    }
+
     #intro-section{
         flex-direction: column-reverse;
+    }
+
+    .intro-image{
+        margin-right:0;
     }
     
 
@@ -291,8 +301,21 @@ h2{
         font-size: 2.5rem;
     }
 
+    .project-boxes {
+        margin-top:5vw;
+        gap:2rem;
+        flex-direction: column;
+    }
+
+    .project-button{
+        width:70vw;
+        height:50vw;
+    }
 
     .desc-container{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
         width: 70vw;
     }
 
@@ -302,8 +325,13 @@ h2{
     .about-skill-line {
         flex-direction: column;
     }
+
+    .about-skill-line-box{
+        text-align: center;
+    }
     .about-skill-blobs{
         flex-direction:row;
+        justify-content:center;
     }
 
     .skill-section{
@@ -311,11 +339,16 @@ h2{
     }
 
     .skill-button{
-        padding:0.3rem 3.0rem;
+        font-size:2rem;
+        padding:0.3rem 6.0rem;
     }
 
     .skill-button img{
         height:0.8rem;
+    }
+
+    .view-all-button{
+        padding:0.8rem 5rem;
     }
 
 

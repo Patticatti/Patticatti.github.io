@@ -5,7 +5,7 @@
 
 #home-page {
     position:absolute;
-    top:50px;
+    margin-top:65px;
     display:flex;
     flex-direction:column;
 }
@@ -373,7 +373,7 @@ h2{
     }
 
     .intro-image{
-        width:40%;
+        width:10rem;
         margin-right:0;
     }
     

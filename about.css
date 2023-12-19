@@ -3,8 +3,26 @@
     margin-top:8vw;
     width: 100%;
     font-size:2.0vw;
-    height: 200vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about-me-desc{
+    width:35vw;
+}
+
+.halfsplit{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10vw;
+}
+
+.selfie{
+    width:35vw;
+    height:50vw;
+    object-fit:cover;
+    margin-bottom:5vw;
+    border-radius: 10px;
 }

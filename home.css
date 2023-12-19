@@ -210,16 +210,16 @@ h2{
     position: relative;
 }
 
-.project-text h2 {
-    font-size: 1.0vw;
+.project-text h4 {
+    font-size: 1.0rem;
     font-weight: normal;
     color: #160307;
     display: inline;
 }
 
-.project-text h3 {
-    font-size: 1.0vw;
-    color: #FE375D;
+.project-text h5 {
+    font-size: 0.8rem;
+    color: var(--dark-color);
     display: inline;
 }
 
@@ -243,7 +243,11 @@ h2{
 }
 
 .view-all-button{
-    margin-top:1vw;
+    margin-top:3vw;
+}
+
+.learn-more-button{
+    margin-bottom:5vw;
 }
 
 #experience-section{
@@ -299,7 +303,19 @@ h2{
         flex-direction: column;
     }
     .about-skill-blobs{
-        align-content: center;
+        flex-direction:row;
+    }
+
+    .skill-section{
+        flex-direction: column;
+    }
+
+    .skill-button{
+        padding:0.3rem 3.0rem;
+    }
+
+    .skill-button img{
+        height:0.8rem;
     }
 
 
@@ -321,6 +337,14 @@ h2{
     
     .about-skill-line {
         flex-direction: column;
+    }
+
+    .skill-button{
+        padding:0.3rem 3.0rem;
+    }
+
+    .skill-button img{
+        height:0.8rem;
     }
 
 } 

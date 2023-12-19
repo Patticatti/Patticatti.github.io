@@ -97,7 +97,6 @@ button {
     border: none;
     padding: 1.2rem 5.0rem;
     font-size:1.5rem;
-    margin: 0px 0.8rem;
     margin-bottom:5vw;
     cursor: pointer;
     border-radius: 30px;
@@ -198,8 +197,6 @@ nav a:hover {
     background-color: var(--dark-color);
     color: #ffffff;
     display:flex;
-    height:30vw;
-    width:100vw;
     gap:5vw;
     position:relative;
     justify-content:center;
@@ -280,6 +277,14 @@ nav a:hover {
         font-size: 1.5rem;
         cursor: pointer;
         border-radius: 30px; 
+    }
+
+    .skill-line{
+        transform: rotate(90deg);
+    }
+
+    #contact-section{
+        flex-direction: column;
     }
 }
 

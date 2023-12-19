@@ -29,6 +29,7 @@ button:hover {
 }
 
 .project-boxes {
+    gap:1.0rem;
     display: flex;
 }
 

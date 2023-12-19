@@ -399,7 +399,8 @@ h2{
     }
     
     .about-skill-line {
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: repeat(1);
     }
 
     .skill-button{

@@ -278,10 +278,11 @@ nav a:hover {
     justify-content: center;
 }
 .mail-number{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
     opacity:0.86;
-    text-align: center;
-    justify-content: center;
-    padding-inline:3vw;
+    place-items: center;
+    padding-inline:5vw;
 }
 
 .mail-number h4{
@@ -347,6 +348,9 @@ nav a:hover {
     #contact-section{
         flex-direction: column;
     }
+    .contact-email-phone{
+        flex-direction: column;
+    }
 
     .contact-me h5{
         align-self: center;
@@ -401,6 +405,9 @@ nav a:hover {
         background-color: transparent;
         margin-right:20px;
     }
+    .mail-number{
+        padding-inline:0;
+    }
 
     .logo{
         height: 30px;
@@ -415,9 +422,19 @@ nav a:hover {
     h5{
         line-height: 1.2rem;
     }
+    #contact-section{
+        gap:1rem;
+    }
+    #contact-section h2{
+        font-size:1.8rem;
+    }
 
     .contact-email-phone{
         flex-direction: column;
+    }
+
+    .social-icon{
+        width:2rem;
     }
 
     .button {

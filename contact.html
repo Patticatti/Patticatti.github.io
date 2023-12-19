@@ -11,22 +11,49 @@
     </head>
 
 <body>
-    <header>
-        <div id="logo-container">
-            <a href="index.html" id="logo">
-                <img class="logo" src="images/logo.png">
-            </a>
-            <p id="name">PATRICIA TANI</p>
+    <div class="background">
+        <div id="stars">
+            <img class="star1" src="images/bigstar.png">
+            <img class="star2" src="images/bigstar.png">
+            <img class="star3" src="images/bigstar.png">
+            <img class="star4" src="images/bigstar.png">
         </div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="experience.html">EXPERIENCE</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-        <img class="menu-icon" src="images/burgermenu.svg" onclick="toggleNav()"></img>
-    </header>
+    </div>
+    <div class="content">
+        <header>
+            <div id="logo-container">
+                <a href="index.html" id="logo">
+                    <img class="logo" src="images/logo.png">
+                </a>
+                <p id="name">PATRICIA TANI</p>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="experience.html">EXPERIENCE</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <img class="menu-icon" src="images/burgermenu.svg" onclick="toggleNav()"></img>
+        </header>
+        <div id="contact-page">
+            <h2>Contact Me</h2>
+            <div class ="contact-options">
+                <div class="mail-number">
+                    <img class="social-icon" src="images/gmail.png">
+                    <h4>xpatticattix@gmail.com</h4>
+                </div>
+                <div class="mail-number">
+                    <img class="social-icon" src="images/discord.png">
+                    <h4>patticatti</h4>
+                </div>
+                <div class="mail-number">
+                    <img class="social-icon" src="images/instagram.png">
+                    <h4>@patti_tani</h4>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         var isNavOpen = false;
         var nav = document.querySelector('nav');

@@ -13,7 +13,7 @@
 #intro-section {
     position: relative;
     display:flex;
-    height:60vw;
+    height:45vw;
     align-items: center;
 }
 
@@ -249,7 +249,7 @@ h2{
 
 .learn-more-button{
     padding:0.8rem 2.3rem;
-    margin-bottom:5vw;
+    margin-bottom:3rem;
 }
 
 #experience-section{
@@ -298,6 +298,11 @@ h2{
 
     #experience-section{
         flex-direction: column;
+    }
+
+    .experience-image{
+        width:90vw;
+        margin-top:3rem;
     }
 
     h2{

@@ -1,6 +1,6 @@
 #portfolio-page {
     position: relative;
-    margin-top:8vw;
+    margin-top:5rem;
     width: 100%;
     font-size:2.0vw;
     height: 200vw;
@@ -9,16 +9,29 @@
     flex-direction: column;
 }
 #portfolio-page h1{
+    color:var(--background-color);
     margin-top:0.5vw;
+    font-size: 6rem;
 }
 .portfolio-icon{
+    margin-top:2rem;
     width:4vw;
     height:auto;
 }
+.project-text h2{
+    color:var(--background-color);
+    font-family: 'josefin-sans',serif;
+    font-weight: 500;
+    font-size:1.8rem;
+}
 
-
+.project-text h5{
+    margin:0;
+    line-height: 1rem;
+    color:var(--background-color);
+    font-size:1.0rem;
+}
 button.view-all-button {
-    margin-top: 8vw;
     width: 20vw;
     padding: 1.8vw 5.0vw;
 }
@@ -59,15 +72,6 @@ button:hover {
 .project-button:hover + .project-text {
     opacity: 1; 
 }
-
-.project-text h1 {
-    font-size: 2.0vw;
-    line-height: 1.2;
-}
-.project-text h2 {
-    font-size: 1.0vw;
-}
-
 .project-button {
     background-color: black;
     position: relative;
@@ -106,9 +110,6 @@ button:hover {
         width:12vw;
         height:auto;
     }
-    #portfolio-page h2{
-        font-size:10.0vw;
-    }
 
     button.view-all-button {
         margin-top: 10vw;
@@ -121,27 +122,17 @@ button:hover {
     }
 
     #project-all-boxes{
-        margin-top:0vw;
+        margin-top:5vw;
     }
 
     .project-button {
         width: 70vw;
         height: 40vw;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .project-text {
         top: 0px;
-    }
-
-    .project-text h3, 
-    .project-text h2 {
-        font-size: 12px;
-    }
-
-    .project-text h1 {
-        margin-top:0px;
-        font-size: 15px;
     }
 
 }

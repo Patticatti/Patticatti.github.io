@@ -71,6 +71,7 @@ body {
     position: relative; /* Create a stacking context */
     z-index: 1; /* Place the content on top of the background */
     overflow-y: auto; /* Enable vertical scrolling for content */
+    overflow-x:hidden;
     height: 100vh; /* Set the height of the content to the viewport height */
 }
 
@@ -198,9 +199,27 @@ nav a:hover {
     color: #ffffff;
     display:flex;
     gap:2vw;
+    width:100%;
     position:relative;
     justify-content:center;
     align-items:center;
+}
+
+.right-star,.left-star{
+    position:absolute;
+    height:8rem;
+    width:8rem;
+    top:-3.5rem;
+    z-index: 4;
+}
+
+.right-star{
+    right:-2rem;
+}
+
+.left-star{
+    transform: scaleX(-1);
+    left:-2rem;
 }
 
 .contact-me{
@@ -257,6 +276,10 @@ nav a:hover {
 .mail-number h4{
     color: #ffffff;
     margin-top:1vw;
+}
+
+.contact-me-startitle h2{
+    padding-top:0;
 }
 
 @media (max-width: 480px) /*mobile*/

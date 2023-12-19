@@ -123,11 +123,9 @@ nav a {
     text-decoration: none;
     margin: 0 20px; /* idk, space b/w elements */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #2d070e;
     cursor: pointer;
     text-decoration: underline;
 }

@@ -20,22 +20,23 @@
         </div>
     </div>
     <div class="content">
-    <header>
-        <div id="logo-container">
-            <a href="index.html" id="logo">
-                <img class="logo" height="50px" width="auto" src="images/logo.png">
-            </a>
-            <p id="name">PATRICIA TANI</p>
-        </div>
-        <img id="open-menu"></button>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="experience.html">EXPERIENCE</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
+        <header>
+            <div id="logo-container">
+                <a href="index.html" id="logo">
+                    <img class="logo" src="images/logo.png">
+                </a>
+                <p id="name">PATRICIA TANI</p>
+            </div>
+            <nav>
+                <img class="close-menu" src="images/home/forwardarrow.svg" width="20px"height="20px"onclick="toggleNav()"></img>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="experience.html">EXPERIENCE</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <img class="menu-icon" src="images/burgermenu.svg" onclick="toggleNav()"></img>
+        </header>
     <div id="portfolio-page">
         <img class="portfolio-icon" src="images/logo.png">
         <h1>PORTFOLIO</h1>
@@ -278,6 +279,17 @@
                 portfolioPage.style.height = lowestElementPosition + 900 + "px";
             }
         }
+        var isNavOpen = false;
+        var nav = document.querySelector('nav');
+        function toggleNav() {
+            isNavOpen=!isNavOpen;
+            nav.style.right = isNavOpen ? '0' : '-250px';
+        }
+        document.body.addEventListener('click', function(e) {
+            if (isNavOpen && !nav.contains(e.target) && e.target !== document.querySelector('.menu-icon')) {
+                toggleNav();
+            }
+        });
     </script>
     </div>  
         

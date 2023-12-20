@@ -33,8 +33,8 @@
 }
 
 .project-modal-content {
-    width: 70%;
-    height: 100%;
+    height: 80%;
+    width: auto;
     object-fit: contain;
 }
 
@@ -166,6 +166,24 @@ button:hover {
 {
     #portfolio-page h1{
         font-size: 3rem;
+    }
+
+    .project-boxes {
+        flex-direction: column;
+    }
+
+    #project-all-boxes{
+        margin-top:5vw;
+    }
+
+    .project-button {
+        width: 70vw;
+        height: 40vw;
+        margin-bottom: 20px;
+    }
+
+    .project-text {
+        top: 0px;
     }
 
 }

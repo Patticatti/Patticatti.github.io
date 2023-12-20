@@ -19,17 +19,21 @@
 }
 
 .project-modal {
-    display: none;
     position: fixed;
+    margin-top:20px;
+    display:none;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index:5;
 }
 
 .project-modal-content {
-    width: 100%;
+    width: 70%;
     height: 100%;
     object-fit: contain;
 }

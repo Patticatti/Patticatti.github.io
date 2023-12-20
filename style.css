@@ -233,6 +233,21 @@ nav a:hover {
     left:-2rem;
 }
 
+footer{
+    display:flex;
+    width:100%;
+    background-color: var(--dark-color);
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5{
+    margin-left: 4vw;
+    font-size: 0.8rem;
+    letter-spacing: 0.07rem;
+    color:var(--background-color);
+    opacity: 0.6;
+}
 .contact-me{
     display:flex;
     flex-direction: column;
@@ -240,6 +255,7 @@ nav a:hover {
 }
 .contact-me h2{
     color:#ffffff;
+    font-size:1.8rem;
 }
 .contact-me h5{
     opacity:0.86;

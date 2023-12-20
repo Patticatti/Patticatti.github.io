@@ -8,13 +8,20 @@
     flex-direction: column;
 }
 #portfolio-page h1{
-    color:var(--background-color);
-    margin-top:2.0rem;
-    font-size: 4.5rem;
+    font-family: 'josefin-slab',serif;
+    font-weight:700;
+    color:var(--dark-color);
+    margin-top:1.0rem;
+    font-size: 3.0rem;
+    margin-bottom: 1.0rem;
+}
+
+#portfolio-page .horizline {
+    margin-bottom:2.0rem;
 }
 .portfolio-icon{
     margin-top:2rem;
-    width:4rem;
+    width:3rem;
     height:auto;
 }
 

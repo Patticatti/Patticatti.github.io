@@ -1,213 +1,207 @@
-#portfolio-page {
-    position: relative;
-    margin-top:65px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#page {
+  position: relative;
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-#portfolio-page h1{
-    font-family: 'josefin-slab',serif;
-    font-weight:700;
-    color:var(--dark-color);
-    margin-top:1.0rem;
-    font-size: 3.0rem;
-    margin-bottom: 1.0rem;
-}
-
-#portfolio-page .horizline {
-    margin-bottom:1.0rem;
-}
-.portfolio-icon{
-    margin-top:2rem;
-    width:3rem;
-    height:auto;
+#page h1 {
+  font-family: "josefin-slab", serif;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-top: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.portfolio-desc{
-    width:50%;
-    text-align: center;
+#page .horizline {
+  margin-bottom: 1rem;
+}
+.portfolio-icon {
+  margin-top: 2rem;
+  width: 3rem;
+  height: auto;
 }
 
-.portfolio-desc h5{
-    margin-top:0;
+.portfolio-desc {
+  width: 50%;
+  text-align: center;
+}
+
+.portfolio-desc h5 {
+  margin-top: 0;
 }
 
 .project-modal {
-    position: fixed;
-    margin-top:20px;
-    display:none;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    align-items:center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index:5;
+  position: fixed;
+  margin-top: 20px;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
 }
 
 .project-modal-content {
-    height: 80%;
-    width: auto;
-    object-fit: contain;
+  height: 80%;
+  width: auto;
+  object-fit: contain;
 }
 
-.project-text h2{
-    color:var(--background-color);
-    font-family: 'josefin-sans',serif;
-    font-weight: 500;
-    font-size:2.5vw;
+.project-text h2 {
+  color: var(--background-color);
+  font-family: "josefin-sans", serif;
+  font-weight: 500;
+  font-size: 2.5vw;
 }
 
-.project-text h5{
-    margin:0;
-    line-height: 1rem;
-    color:var(--background-color);
-    font-size:1.0rem;
+.project-text h5 {
+  margin: 0;
+  line-height: 1rem;
+  color: var(--background-color);
+  font-size: 1rem;
 }
 button.view-all-button {
-    width: 20vw;
-    padding: 1.8vw 5.0vw;
+  width: 20vw;
+  padding: 1.8vw 5vw;
 }
 
 button:hover {
-    transition: background-color 0.3s ease;
-    background-color: #2d070e;
+  transition: background-color 0.3s ease;
+  background-color: #2d070e;
 }
 
 .project-button:hover {
-    cursor:default;
+  cursor: default;
 }
 
 .project-boxes {
-    gap:1.0rem;
-    display: flex;
+  gap: 1rem;
+  display: flex;
 }
 
-.project-box{
-    position:relative;
+.project-box {
+  position: relative;
 }
 
 .project-text,
 .project-button {
-    position: absolute;
-    left: 0;
-    top: 0;
-    /* Additional styling properties as needed */
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* Additional styling properties as needed */
 }
 
-
 .project-text {
-    text-align: left;
-    pointer-events: none;
-    color: #ffffff;
-    font-weight: bold;
-    opacity:0;
-    margin-inline:20px;
-    transition: opacity 0.2s ease; 
+  text-align: left;
+  pointer-events: none;
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 0;
+  margin-inline: 20px;
+  transition: opacity 0.2s ease;
 }
 
 .project-button:hover + .project-text {
-    opacity: 1; 
+  opacity: 1;
 }
 .project-button {
-    background-color: black;
-    position: relative;
-    width: 25vw;
-    height: 20vw;
-    text-align: left;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    border-radius: 10px;
+  background-color: black;
+  position: relative;
+  width: 25vw;
+  height: 20vw;
+  text-align: left;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .project-button img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-#portfolio-page .cover-image{
-    width:auto;
-    height:100%;
-    max-height:80vh;
-    object-fit: cover;
+#portfolio-page .cover-image {
+  width: auto;
+  height: 100%;
+  max-height: 80vh;
+  object-fit: cover;
 }
 
 .project-button:hover img {
-    filter: brightness(0.8);
-    transition: filter 0.2s ease;
-    opacity: 0.5;
+  filter: brightness(0.8);
+  transition: filter 0.2s ease;
+  opacity: 0.5;
 }
 
+@media (max-width: 480px) /*mobile*/ {
+  #portfolio-page {
+    position: relative;
+    margin-top: 15vw;
+    width: 100%;
+  }
+  .portfolio-icon {
+    width: 12vw;
+    height: auto;
+  }
 
-@media (max-width: 480px) /*mobile*/
-{
-    #portfolio-page {
-        position: relative;
-        margin-top:15vw;
-        width: 100%;
-    }
-    .portfolio-icon{
-        width:12vw;
-        height:auto;
-    }
+  button.view-all-button {
+    margin-top: 10vw;
+    width: 50vw;
+    padding: 4vw 12vw;
+  }
 
-    button.view-all-button {
-        margin-top: 10vw;
-        width: 50vw;
-        padding: 4.0vw 12.0vw;
-    }
+  .project-boxes {
+    flex-direction: column;
+  }
 
-    .project-boxes {
-        flex-direction: column;
-    }
+  #project-all-boxes {
+    margin-top: 5vw;
+  }
 
-    #project-all-boxes{
-        margin-top:5vw;
-    }
+  .project-button {
+    width: 70vw;
+    height: 40vw;
+    margin-bottom: 20px;
+  }
 
-    .project-button {
-        width: 70vw;
-        height: 40vw;
-        margin-bottom: 20px;
-    }
+  .project-text {
+    top: 0px;
+  }
 
-    .project-text {
-        top: 0px;
-    }
-
-    #portfolio-page h1{
-        font-size: 3rem;
-    }
-
+  #portfolio-page h1 {
+    font-size: 3rem;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 768px)  /*tablet*/
-{
-    #portfolio-page h1{
-        font-size: 3rem;
-    }
+@media (min-width: 480px) and (max-width: 768px) /*tablet*/ {
+  #portfolio-page h1 {
+    font-size: 3rem;
+  }
 
-    .project-boxes {
-        flex-direction: column;
-    }
+  .project-boxes {
+    flex-direction: column;
+  }
 
-    #project-all-boxes{
-        margin-top:5vw;
-    }
+  #project-all-boxes {
+    margin-top: 5vw;
+  }
 
-    .project-button {
-        width: 70vw;
-        height: 40vw;
-        margin-bottom: 20px;
-    }
+  .project-button {
+    width: 70vw;
+    height: 40vw;
+    margin-bottom: 20px;
+  }
 
-    .project-text {
-        top: 0px;
-    }
-
+  .project-text {
+    top: 0px;
+  }
 }

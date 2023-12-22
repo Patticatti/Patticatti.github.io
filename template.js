@@ -16,7 +16,7 @@ header.innerHTML = `
         </nav>
         <img class="menu-icon" src="../images/burgermenu.svg" onclick="toggleNav()"></img>
         `;
-document.body.insertBefore(header, document.body.firstChild);
+existingContent.insertBefore(header, existingContent.firstChild);
 
 document.addEventListener("DOMContentLoaded", function () {
   var isNavOpen = false;
@@ -37,8 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleNav();
     }
   });
-  var footer = document.createElement("div");
-  footer.innerHTML = `
+
+  if (!document.getElementById("contact-page")) {
+    var footer = document.createElement("div");
+    footer.innerHTML = `
     <div id="contact-section">
     <div class="contact-me">
         <div class="contact-me-startitle">
@@ -75,5 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </footer>
     `;
 
-  document.body.appendChild(footer);
+    existingContent.appendChild(footer);
+  }
 });

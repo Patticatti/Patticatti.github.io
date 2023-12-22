@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="icon" type="images/x-icon" href="images/moyai.png">
-    <link rel="stylesheet" href="experience.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sle5sky.css">
-</head>
+    <link rel="icon" type="images/x-icon" href="images/moyai.png" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/sle5sky.css" />
+  </head>
 
-<body>
+  <body>
     <div class="background">
-        <img class="bkmult" src="images/background/bkgradmult.png">
-        <div id="stars">
-            <img class="star1" src="images/bigstar.png">
-            <img class="star2" src="images/bigstar.png">
-            <img class="star3" src="images/bigstar.png">
-        </div>
+      <img class="bkmult" src="images/background/bkgradmult.png" />
+      <div id="stars">
+        <img class="star1" src="images/bigstar.png" />
+        <img class="star2" src="images/bigstar.png" />
+        <img class="star3" src="images/bigstar.png" />
+      </div>
     </div>
-    <div class="content">
-        <header>
-            <div id="logo-container">
-                <a href="index.html" id="logo">
-                    <img class="logo" src="images/logo.png">
-                </a>
-                <p id="name">PATRICIA TANI</p>
-            </div>
-            <nav>
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="portfolio.html">PORTFOLIO</a>
-                <a href="experience.html">EXPERIENCE</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
-            <img class="menu-icon" src="images/burgermenu.svg" onclick="toggleNav()"></img>
-        </header>
-        <div id="experience-page">
-            <div class="halfsplit">
-                <div class ="experience-desc">
-                    <h2>EXPERIENCE</h2>
-                    <img class="horizline" src="images/horizline.svg">
-                    <h5>My experience in collabortive workspaces encompasses many different avenues. From university group projects, to volunteering, to extracurricular leadership experiences, I am well-versed in collaborating in a team. 
-                        <br><br>
-                        As I embraced my love for games, they reciprocally supplemented my personal growth, motivating me to undertake leadership, such as founding my university's Game Development Club, leading a 17-member indie team, and directing my first hackathon project. </h5>
-                </div>
-                <img class="selfie" src="images\aboutplaceholder.jpg">
-            </div>
+    <div id="content">
+      <div id="page">
+        <div class="halfsplit">
+          <div class="experience-desc">
+            <h2>EXPERIENCE</h2>
+            <img class="horizline" src="images/horizline.svg" />
+            <h5>
+              My experience in collabortive workspaces encompasses many
+              different avenues. From university group projects, to
+              volunteering, to extracurricular leadership experiences, I am
+              well-versed in collaborating in a team. <br /><br />
+              As I embraced my love for games, they reciprocally supplemented my
+              personal growth, motivating me to undertake leadership, such as
+              founding my university's Game Development Club, leading a
+              17-member indie team, and directing my first hackathon project.
+            </h5>
+          </div>
+          <img class="selfie" src="images/aboutplaceholder.jpg" />
         </div>
-        <footer> 
-            <h5>© Patricia Tani 2023 - 2023 | Vancouver, British Columbia, Canada</h5>
-        </footer>
+      </div>
     </div>
-    <script>
-        var isNavOpen = false;
-        var nav = document.querySelector('nav');
-        function toggleNav() {
-            isNavOpen=!isNavOpen;
-            nav.style.right = isNavOpen ? '0' : '-250px';
-        }
-        document.body.addEventListener('click', function(e) {
-            if (isNavOpen && !nav.contains(e.target) && e.target !== document.querySelector('.menu-icon')) {
-                toggleNav();
-            }
-        });
-    </script>       
-</body>
-
+    <script src="template.js"></script>
+  </body>
 </html>

@@ -78,6 +78,8 @@ body {
 header {
     background-color: var(--dark-color);
     position:fixed;
+    top:0;
+    left:0;
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 300;
@@ -88,6 +90,12 @@ header {
     align-items: center;
     z-index: 1000;
     width: 100%;
+}
+
+#doc-embed{
+    width:50%;
+    height:60vh;
+    overflow: hidden;
 }
 
 button {

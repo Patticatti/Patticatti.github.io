@@ -17,12 +17,21 @@
 }
 
 #portfolio-page .horizline {
-    margin-bottom:2.0rem;
+    margin-bottom:1.0rem;
 }
 .portfolio-icon{
     margin-top:2rem;
     width:3rem;
     height:auto;
+}
+
+.portfolio-desc{
+    width:50%;
+    text-align: center;
+}
+
+.portfolio-desc h5{
+    margin-top:0;
 }
 
 .project-modal {

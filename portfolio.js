@@ -24,8 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   projectButtons.forEach(function (button) {
-    button.onclick = function () {
-      showProject(button);
-    };
+    if (button.onclick === null) {
+      button.onclick = function () {
+        showProject(button);
+      };
+    }
   });
 });

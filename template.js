@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var nav = document.querySelector("nav");
 
   window.toggleNav = function () {
-    console.log("togglenav");
     isNavOpen = !isNavOpen;
     nav.style.right = isNavOpen ? "0" : "-250px";
   };

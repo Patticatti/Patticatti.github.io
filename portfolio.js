@@ -1,3 +1,9 @@
+var buttonImage = document.createElement("img");
+buttonImage.innerHTML = `
+        <img src="images/magentastar.png" width='30px' height='auto'>
+        `;
+existingContent.insertBefore(buttonImage, existingContent.firstChild);
+
 document.addEventListener("DOMContentLoaded", function () {
   var projectButtons = document.querySelectorAll(".project-button");
   var isModalOpen = false;

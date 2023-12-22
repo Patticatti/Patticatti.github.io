@@ -19,6 +19,7 @@
   display: grid;
   width: 80vw;
   grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
   text-align: center;
 }
 
@@ -115,8 +116,9 @@ button:hover {
 .project-button {
   background-color: black;
   position: relative;
-  width: 25vw;
   height: 20vw;
+  margin-bottom: 0;
+  width: 100%;
   text-align: left;
   border: none;
   padding: 0;
@@ -154,11 +156,10 @@ button:hover {
     padding: 4vw 12vw;
   }
   #project-all-boxes {
-    margin-top: 5vw;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .project-button {
-    width: 70vw;
     height: 40vw;
     margin-bottom: 20px;
   }
@@ -177,21 +178,22 @@ button:hover {
     font-size: 3rem;
   }
 
-  .project-boxes {
-    flex-direction: column;
-  }
-
   #project-all-boxes {
-    margin-top: 5vw;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
   }
 
   .project-button {
-    width: 70vw;
     height: 40vw;
+    width: 100%;
     margin-bottom: 20px;
   }
 
   .project-text {
     top: 0px;
+  }
+
+  .project-text h2 {
+    font-size: 2rem;
   }
 }

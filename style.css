@@ -93,11 +93,15 @@ header {
 }
 
 #doc-embed{
-    width:50%;
-    height:60vh;
+    width:80%;
+    height:80vh;
     overflow: hidden;
 }
 
+#youtube-embed{
+    width:100%;
+    height:100%;
+}
 button {
     color: #ffffff;
     background-color: var(--accent-color);

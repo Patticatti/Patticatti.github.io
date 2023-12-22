@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="images/x-icon" href="images/moyai.png">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../portfolio.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sle5sky.css">
-</head>
+// script.js
 
-<body>
-    <header>
+document.addEventListener("DOMContentLoaded", function () {
+  // Create a new div element to hold your injected HTML
+  var newContent = document.createElement("div");
+  newContent.innerHTML = `
+        <header>
         <div id="logo-container">
             <a href="index.html" id="logo">
                 <img class="logo" height="50px" width="auto" src="../images/logo.png">
@@ -26,16 +19,9 @@
             <a href="../contact.html">CONTACT</a>
         </nav>
         <img class="menu-icon" src="../images/burgermenu.svg" onclick="toggleNav()"></img>
-    </header>
-    <div id="portfolio-page">
-        <img class="cover-image" src="../images/projects/blackforestcafe.png">
-        <h1>BLACK FOREST CAFE</h1>
-        <div id="video-container">
-            <iframe id="youtube-embed" src="https://www.youtube.com/embed/c0deQbgnuMY" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <iframe id="doc-embed" src="https://docs.google.com/document/d/e/2PACX-1vR3Lyx3zV34n91OnBAZvPd92pfLRRJtmv4EltmgFiLJi-GY_F3ae5qHmq15YIQd8TnSPZ1rBcvD3k_p/pub?embedded=true"></iframe>
-    </div>
-    <div id="contact-section">
+        </header>
+        
+        <div id="contact-section">
         <div class="contact-me">
             <div class="contact-me-startitle">
                 <img class="about-skill-title-icon" src="../images/magentastar.png">
@@ -69,19 +55,24 @@
     <footer> 
         <h5>© Patricia Tani 2023 - 2023 | Vancouver, British Columbia, Canada</h5>
     </footer>
-    <script>
-        var isNavOpen = false;
-        var nav = document.querySelector('nav');
-        function toggleNav() {
-            isNavOpen=!isNavOpen;
-            nav.style.right = isNavOpen ? '0' : '-250px';
-        }
-        document.body.addEventListener('click', function(e) {
-            if (isNavOpen && !nav.contains(e.target) && e.target !== document.querySelector('.menu-icon')) {
-                toggleNav();
-            }
-        });
-    </script>    
-</body>
+    `;
+  document.body.appendChild(newContent);
 
-</html>
+  var isNavOpen = false;
+  var nav = document.querySelector("nav");
+
+  function toggleNav() {
+    isNavOpen = !isNavOpen;
+    nav.style.right = isNavOpen ? "0" : "-250px";
+  }
+
+  document.body.addEventListener("click", function (e) {
+    if (
+      isNavOpen &&
+      !nav.contains(e.target) &&
+      e.target !== document.querySelector(".menu-icon")
+    ) {
+      toggleNav();
+    }
+  });
+});

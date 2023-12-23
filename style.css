@@ -124,6 +124,13 @@ header {
   height: 100%;
 }
 
+.halfsplit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
 button {
   color: #ffffff;
   background-color: var(--accent-color);

@@ -1,8 +1,6 @@
 var buttonImage = document.createElement("img");
-buttonImage.innerHTML = `
-        <img src="images/magentastar.png" width='30px' height='auto'>
-        `;
-existingContent.insertBefore(buttonImage, existingContent.firstChild);
+buttonImage.className = "hasdesc";
+buttonImage.src = "images/magentastar.png";
 
 document.addEventListener("DOMContentLoaded", function () {
   var projectButtons = document.querySelectorAll(".project-button");
@@ -34,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
       button.onclick = function () {
         showProject(button);
       };
+    } else {
+      button.parentNode.appendChild(buttonImage);
     }
   });
 });

@@ -139,6 +139,14 @@ button:hover {
   opacity: 0.5;
 }
 
+.hasdesc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: auto;
+}
+
 @media (max-width: 480px) /*mobile*/ {
   #page {
     position: relative;

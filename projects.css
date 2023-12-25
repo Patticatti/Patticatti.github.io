@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+h5 {
+  max-width: 60%;
+  text-align: center;
+}
+
 .cover-image {
   height: 100%;
   width: 100%;

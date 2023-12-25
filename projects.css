@@ -1,26 +1,16 @@
-#page {
-  position: relative;
-  margin-top: 65px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 #page h2 {
   text-align: center;
   width: 80vw;
 }
 
 #cover-images {
+  display: flex;
   height: 50vh;
   width: 100%;
-  display: flex;
 }
 
 .cover-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  overflow: hidden;
 }

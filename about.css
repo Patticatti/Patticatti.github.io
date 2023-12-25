@@ -7,13 +7,6 @@
   width: 35vw;
 }
 
-.halfsplit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10vw;
-}
-
 .hobbies-container {
   position: relative;
 }

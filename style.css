@@ -155,6 +155,7 @@ button:hover {
   top: 68px;
   padding: 0.4rem 1.5rem;
   left: 5px;
+  z-index: 1000;
 }
 #back-button img {
   width: 0.8rem;

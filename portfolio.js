@@ -1,7 +1,3 @@
-var buttonImage = document.createElement("img");
-buttonImage.className = "hasdesc";
-buttonImage.src = "images/magentastar.png";
-
 document.addEventListener("DOMContentLoaded", function () {
   var projectButtons = document.querySelectorAll(".project-button");
   var isModalOpen = false;
@@ -33,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
         showProject(button);
       };
     } else {
+      var buttonImage = document.createElement("img");
+      buttonImage.className = "hasdesc";
+      buttonImage.src = "images/magentastar.png";
       button.parentNode.appendChild(buttonImage);
     }
   });

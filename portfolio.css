@@ -145,7 +145,7 @@ button:hover {
   left: 0;
   width: 2rem;
   height: auto;
-  z-index: 1000;
+  z-index: 2;
 }
 
 @media (max-width: 480px) /*mobile*/ {

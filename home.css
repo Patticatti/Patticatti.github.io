@@ -336,6 +336,10 @@ h2 {
     flex-direction: column;
   }
 
+  .skill-section .horizline {
+    display: none;
+  }
+
   .skill-button {
     font-size: 2rem;
     padding: 0.3rem 6rem;

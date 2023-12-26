@@ -384,6 +384,10 @@ footer h5 {
     padding-inline: 10px;
   }
 
+  h2 {
+    margin-block: 1rem;
+  }
+
   .menu-icon {
     height: 40px; /* Adjust the height based on your image size */
     width: 40px;
@@ -409,7 +413,7 @@ footer h5 {
   }
 
   .skill-line {
-    transform: rotate(90deg);
+    display: none;
   }
 
   #contact-section {
@@ -423,6 +427,10 @@ footer h5 {
     align-self: center;
     max-width: 70vw;
     text-align: center;
+  }
+
+  .horizline {
+    width: 12vw;
   }
 
   .contact-social-icons {
@@ -496,12 +504,16 @@ footer h5 {
     font-size: 1.8rem;
   }
 
+  .horizline {
+    width: 10vw;
+  }
+
   .contact-email-phone {
     flex-direction: column;
   }
 
   .social-icon {
-    width: 2rem;
+    width: 6rem;
   }
 
   .button {

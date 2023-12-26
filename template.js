@@ -57,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="social-button" onclick="window.location.href='https://www.youtube.com/@itsPatticatti'">
                 <img class="social-icon" src="../images/youtube.png">
             </button>
+            <button class="social-button" onclick="window.location.href='https://github.com/Patticatti'">
+                <img class="social-icon" src="../images/github.png">
+            </button>
         </div>
     </div>
     <div class="contact-email-phone">

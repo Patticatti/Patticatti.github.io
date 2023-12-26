@@ -92,10 +92,6 @@ h2 {
   padding-top: 5vw;
 }
 
-#skill-section h2 {
-  margin: 0;
-}
-
 .skill-section {
   display: flex;
   gap: 5vw;

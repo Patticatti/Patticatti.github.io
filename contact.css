@@ -80,6 +80,15 @@ span {
   font-size: 1rem;
 }
 
+@media (max-width: 480px) /*mobile*/ {
+  #contact-page h5 {
+    width: 60vw;
+  }
+  .social-icon {
+    width: 4rem;
+  }
+}
+
 @media (max-width: 768px) /*tablet*/ {
   .contact-options {
     grid-template-columns: repeat(1, 1fr);

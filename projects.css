@@ -41,3 +41,16 @@ span {
 .halfslide {
   width: 45%;
 }
+
+@media (max-width: 480px) /*mobile*/ {
+  span {
+    flex-direction: column;
+    align-items: center;
+  }
+  .halfslide {
+    width: 100%;
+  }
+  .slide {
+    width: 100%;
+  }
+}

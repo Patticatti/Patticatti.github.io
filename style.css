@@ -113,10 +113,12 @@ header {
 }
 
 #doc-embed {
-  width: 80%;
+  width: 60%;
+  justify-content: center;
   height: 80vh;
   overflow: hidden;
-  margin: 2rem;
+  margin: 2rem auto;
+  align-items: center; /* Center the content vertically */
 }
 
 #youtube-embed {
@@ -198,8 +200,9 @@ nav a:hover {
 }
 
 #video-container {
-  width: 900px;
-  height: 605px;
+  max-width: 80%;
+  width: 920px;
+  height: 500px;
 }
 
 .logo {
@@ -422,6 +425,10 @@ footer h5 {
   .contact-email-phone {
     flex-direction: column;
   }
+  #doc-embed {
+    width: 100%;
+    margin-inline: 0;
+  }
 
   .contact-me h5 {
     align-self: center;
@@ -446,6 +453,10 @@ footer h5 {
 
   #contact-section .skill-line {
     display: none;
+  }
+
+  #video-container {
+    height: 200px;
   }
 }
 
@@ -503,6 +514,9 @@ footer h5 {
   #contact-section h2 {
     font-size: 1.8rem;
   }
+  #doc-embed {
+    width: 80%;
+  }
 
   .horizline {
     width: 10vw;
@@ -522,5 +536,9 @@ footer h5 {
 
   #contact-section .skill-line {
     display: none;
+  }
+
+  #video-container {
+    height: 300px;
   }
 }

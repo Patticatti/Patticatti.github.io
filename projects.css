@@ -36,10 +36,12 @@ span {
 }
 .slide {
   width: 70%;
+  max-height: 70vh;
 }
 
 .halfslide {
   width: 45%;
+  object-fit: cover;
 }
 
 @media (max-width: 480px) /*mobile*/ {
@@ -52,5 +54,27 @@ span {
   }
   .slide {
     width: 100%;
+  }
+  h5 {
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) /*tablet*/ {
+  span {
+    flex-direction: column;
+    align-items: center;
+  }
+  .halfslide {
+    width: 100%;
+  }
+  .slide {
+    width: 100%;
+  }
+
+  h5 {
+    max-width: 70%;
+    text-align: center;
   }
 }

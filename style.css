@@ -362,7 +362,7 @@ footer h5 {
 
 .social-button {
   display: flex;
-  padding: 1vw;
+  padding: 0.5vw;
   margin-inline: 0.2vw;
   border-radius: 10px;
   align-items: center;

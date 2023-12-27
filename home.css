@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+nav a:nth-child(1) {
+  color: var(--background-color);
+}
+
 #intro-section {
   position: relative;
   display: flex;

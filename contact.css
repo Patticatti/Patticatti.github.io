@@ -34,6 +34,10 @@ h6 {
   text-align: left;
 }
 
+nav a:nth-child(5) {
+  color: var(--background-color);
+}
+
 span {
   display: flex;
 }

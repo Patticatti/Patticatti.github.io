@@ -361,14 +361,15 @@ footer h5 {
 }
 
 .social-button {
+  display: flex;
+  padding: 1vw;
   margin-inline: 0.2vw;
-  padding: 0.5vw 0.5vw;
   border-radius: 10px;
   align-items: center;
+  justify-content: center;
 }
 .social-icon {
   width: 4vw;
-  height: auto;
 }
 
 .contact-email-phone {
@@ -476,13 +477,11 @@ footer h5 {
   }
 
   .contact-social-icons {
-    justify-content: center;
     align-self: center;
   }
 
-  .social-icon {
-    width: 15vw;
-    height: auto;
+  .social-button {
+    display: flex;
   }
 
   #contact-section .skill-line {
@@ -565,8 +564,8 @@ footer h5 {
     flex-direction: column;
   }
 
-  .social-icon {
-    width: 4rem;
+  .social-button {
+    display: flex;
   }
 
   .button {

@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var projectButtons = document.querySelectorAll(".project-button");
   var isModalOpen = false;
   const modal = document.getElementById("projectModal");
+  const backbut = document.getElementById("back-button");
   const projectImg = document.getElementById("projectImg");
   var clickedButton;
 
   window.toggleModal = function () {
     isModalOpen = !isModalOpen;
     modal.style.display = isModalOpen ? "flex" : "none";
+    backbut.style.display = isModalOpen ? "none" : "block";
   };
 
   window.showProject = function (button) {

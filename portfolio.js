@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   window.toggleModal = function () {
     isModalOpen = !isModalOpen;
     modal.style.display = isModalOpen ? "flex" : "none";
-    backbut.style.display = isModalOpen ? "none" : "block";
+    backbut.onclick = function () {
+      isModalOpen ? toggleModal() : "window.location.href='index.html'";
+    };
   };
 
   window.showProject = function (button) {

@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     </div>
     <footer> 
-    <h5>© Patricia Tani 2023 - 2023 | Vancouver, British Columbia, Canada</h5>
+    <h5>© Patricia Tani 2023 - 2023 | Vancouver, BC, Canada</h5>
     </footer>
     `;
 

@@ -120,7 +120,7 @@ h2 {
 
 .skill-button {
   padding: 0rem 5rem;
-  font-size: 3vw;
+  font-size: 2rem;
 }
 
 .skill-button img {
@@ -181,11 +181,6 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-#featured-section h1 {
-  color: #160307;
-  font-size: 3.65vw;
 }
 
 .project-boxes {
@@ -350,9 +345,6 @@ h2 {
     padding: 0.3rem 6rem;
   }
 
-  .skill-button img {
-    height: 0.8rem;
-  }
   #featured-section h2 {
     width: 70%;
   }

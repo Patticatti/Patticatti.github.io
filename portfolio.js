@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     isModalOpen = !isModalOpen;
     modal.style.display = isModalOpen ? "flex" : "none";
     backbut.onclick = function () {
-      isModalOpen ? toggleModal() : "window.location.href='index.html'";
+      isModalOpen ? toggleModal() : (window.location.href = "index.html");
     };
   };
 

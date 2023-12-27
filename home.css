@@ -267,12 +267,13 @@ h2 {
   }
 
   .intro-image {
-    width: 40%;
+    width: 25vh;
     margin-right: 0;
   }
 
   #intro-section h1 {
     width: 90%;
+    max-height: 30vh;
     margin-left: 0;
     margin-top: 1rem;
     font-size: 5rem;

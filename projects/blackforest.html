@@ -85,8 +85,10 @@
           Despite having no experience in C#, my knowledge of C++ applied to its
           base concepts, allowing me to learn its syntax quickly and create a
           lot of scripts. Additionally, my work in general was extremely fast,
-          solely driven by my passion for game development. Within the first day
-          of working on the project, I created the following:
+          solely driven by my passion for game development. My assets were
+          created through Photoshop, while my code was learned through YouTube
+          tutorials and logic. Within the first day of working on the project, I
+          created the following:
           <br /><br />
           Player sprite <br />Animated walking sprites<br />Tilesets<br />Entity
           shadow system <br />Sprite atlas
@@ -123,6 +125,10 @@
           <br />Created player taking damage <br />Created player shooting
           animation
         </h5>
+        <span>
+          <img class="slide" src="../images/projects/blackforest/items.png" />
+          <img class="slide" src="../images/projects/blackforest/runanim.png" />
+        </span>
         <div id="video-container">
           <iframe
             id="youtube-embed"
@@ -183,7 +189,80 @@
           <img class="slide" src="../images/projects/blackforest/items.png" />
           <img class="slide" src="../images/projects/blackforest/runanim.png" />
         </span>
-
+        <h2>INVENTORY SYSTEM</h2>
+        <img class="horizline" src="../images/horizline.svg" />
+        <h5>
+          I began working on the inventory system over the next week after I
+          compeleted my randomized drop script. However, I underestimated how
+          difficult it would be. An overlooked pointer issue caused significant
+          issues for me, triggering a frustrating memory leak and all items to
+          be added in the same place.
+        </h5>
+        <div id="video-container">
+          <iframe
+            id="youtube-embed"
+            src="https://www.youtube.com/embed/Yu2uYK2IRVg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="video-container">
+          <iframe
+            id="youtube-embed"
+            src="https://www.youtube.com/embed/vYcdFRXoZxc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h5>
+          I was finally able to fix it because my more experienced friend
+          noticed I wasn't creating a new instance of item, an apparently common
+          problem among his peers. I was really relieved with his help since I
+          felt like I checked everything in my scripts and still couldn't solve
+          the issue. It still set me back more time than I would've liked.
+        </h5>
+        <div id="video-container">
+          <iframe
+            id="youtube-embed"
+            src="https://www.youtube.com/embed/Gr46GOSnACw"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2>COMBAT TWEAKS</h2>
+        <img class="horizline" src="../images/horizline.svg" />
+        <h5>
+          I added a new enemy and a distinction between the two types: ranged
+          and melee. I also added a damage flash upon the enemy getting hit.
+          This feature was also surprisingly frustrating to implement, because
+          the default colour "White" in Unity just renders the sprite in its
+          original colour. I had to develop my own materials and shaders in
+          order to solve the problem.
+        </h5>
+        <div id="video-container">
+          <iframe
+            id="youtube-embed"
+            src="https://www.youtube.com/embed/AESsbx_mFME"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h5>
+          The new enemy was a purple bat. I reused a bit of the other projectile
+          code but had to change the aggro system since the animations always
+          played in sync. The main way I solved this was creating group aggro,
+          where I would assign each entity a number when generated and reference
+          the number from the list to trigger the aggro. Unfortunately, I didn't
+          develop the animation stagger in the video.
+        </h5>
+        <div id="video-container">
+          <iframe
+            id="youtube-embed"
+            src="https://www.youtube.com/embed/pnIAeS6xJjo"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
         <h2>GAME DESIGN DOCUMENT</h2>
         <img class="horizline" src="../images/horizline.svg" />
         <h5>

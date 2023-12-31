@@ -79,7 +79,6 @@ nav a:nth-child(1) {
 }
 
 #skill-section {
-  background-color: #fff3f5;
   position: relative;
   display: flex;
   width: 100%;
@@ -91,7 +90,7 @@ nav a:nth-child(1) {
 #skill-section h5 {
   text-align: center;
   max-width: 50vw;
-  margin-bottom: 5vw;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -100,15 +99,18 @@ h2 {
 
 .skill-section {
   display: flex;
-  gap: 5vw;
+  gap: 2vw;
   flex-direction: horizontal;
   margin-bottom: 5vw;
 }
 .skill-container {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border-radius: 10px;
 }
 
 .skill-container h4 {
@@ -120,6 +122,7 @@ h2 {
 }
 
 .skill-button {
+  margin-bottom: 1rem;
   padding: 0rem 5rem;
   font-size: 2rem;
 }
@@ -173,11 +176,19 @@ h2 {
   border-radius: 20px;
 }
 
+#slideshow {
+  background-color: var(--secondary-color);
+}
+
+.project-slide img {
+  width: 40%;
+  object-fit: contain;
+}
+
 #featured-section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #fff3f5;
   position: relative;
   justify-content: center;
   align-items: center;

@@ -229,6 +229,11 @@ nav a:hover {
   object-fit: contain;
 }
 
+.fullslide {
+  width: 90%;
+  object-fit: contain;
+}
+
 .halfslide {
   width: 45%;
   object-fit: cover;
@@ -436,9 +441,11 @@ footer h5 {
   .halfslide {
     width: 100%;
   }
-  .slide {
+  .slide,
+  .fullslide {
     width: 100%;
   }
+
   .buttons {
     justify-content: center;
   }
@@ -530,7 +537,8 @@ footer h5 {
   .halfslide {
     width: 100%;
   }
-  .slide {
+  .slide,
+  .fullslide {
     width: 100%;
   }
   .logo {

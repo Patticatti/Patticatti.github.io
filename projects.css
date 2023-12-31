@@ -15,6 +15,11 @@ span {
   margin: 20px;
 }
 
+iframe {
+  width: 100vw;
+  height: 500px;
+}
+
 @media (max-width: 480px) /*mobile*/ {
   span {
     flex-direction: column;
